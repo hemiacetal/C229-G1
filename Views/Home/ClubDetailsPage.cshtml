@@ -1,0 +1,46 @@
+﻿@model Club
+
+
+@{
+    ViewBag.Title = "ClubDetailsPage";
+}
+<h2>  Club Details Page </h2>
+<table align="center">
+
+
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Country</th>         
+            <th>Coach</th>
+            <th>Ground</th>
+            <th>Players</th>
+        </tr>
+    </thead>
+
+
+    <tr>
+        <td>@Model.ClubFullName </td>
+        <td>@Model.Country </td>
+        <td>@Model.HeadCoachName </td>
+        <td>@Model.Ground </td>
+       
+
+        <td>
+            @foreach (Player player in Model.Players)
+            {
+
+                @player.PlayerName <br />
+
+            }
+            </td>
+
+</tr>
+
+</table>
+
+<div class="text-center">
+    <button class="button greenButton"><a asp-action="ManagePlayersPage">Add Players</a></button>
+</div>
+
+

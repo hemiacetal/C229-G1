@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/css/Styles.css" type="text/css">
+
+</head>
+<body>
+    <div id="header">
+        <img id="logo" src="/images/logo.png" />
+    </div>
+
+    <nav>
+        <ul>
+            <li><a asp-action="Index"> Home </a></li>
+            <li><a asp-action="ClubPage"> Club </a></li>
+            <li><a asp-action="AddClubPage">Add Club </a></li>
+            <li><a asp-action="ManagePlayersPage"> Manage Players </a></li>
+        </ul>
+    </nav>
+
+    @if (TempData["message"] != null)
+    {
+        <p class="message">@TempData["message"]</p>
+    }
+
+    <div id="container">
+        <div id="text-block">
+            @RenderBody()
+        </div>
+    </div>
+
+</body>
+</html>
+
+

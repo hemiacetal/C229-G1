@@ -1,0 +1,28 @@
+﻿@model Club
+@{
+    ViewBag.Title = "AddClubPage";
+}
+<!DOCTYPE html>
+
+<html>
+<body>
+    <h2> Add Club </h2>
+        <form asp-action="AddClubPage" method="post">
+            @await Html.PartialAsync("ClubForm")
+            <div>
+                <button class="button greenButton" type="submit">
+                    Submit
+                </button>
+
+                <button asp-action="Index" class="button redButton" type="submit">
+                    Cancel
+                </button>
+            </div>
+        </form>
+</body>
+</html>
+
+
+
+
+

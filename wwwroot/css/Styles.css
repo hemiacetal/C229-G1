@@ -1,0 +1,174 @@
+﻿nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    opacity: 0.8;
+}
+
+nav li {
+    float: left;
+    background-repeat: no-repeat;
+}
+
+li a {
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+    li a:hover {
+        background-color: #111;
+    }
+
+h2 {
+    color: lightskyblue;
+    text-transform: uppercase;
+}
+
+.message {
+    color: darkorange;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    background-color: #333;
+    padding: 2px;
+    opacity: 0.8;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    background-image: url("/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+#logo {
+    height: 100px;
+}
+
+#header {
+    height: 110px;
+}
+
+#container {
+    position: relative;
+}
+
+#text-block {
+    border: 2px solid white;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    right: 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    opacity: 0.8;
+    padding-top: 40px;
+    
+}
+
+table {
+    margin-left:auto;
+    margin-right:auto;
+    border-collapse: collapse;
+    width: 90%;
+    padding: 40px;
+    margin-bottom: 40px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+
+a {
+    color: white;
+}
+
+
+
+form {
+    margin: auto;
+    width: 500px;
+    clear: both;
+    display: block;
+    
+}
+
+    form input {
+        text-align: center;
+        margin: 5px;
+        width: 100%;
+        clear: both;
+    }
+
+    form select {
+        margin: 5px;
+        width: 100%;
+        clear: both;
+    }
+
+.note {
+    color: orangered;
+    font-weight: bold;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: orangered;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.button {
+    padding: 5px 8px;
+    margin: 8px;
+    border: 1px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.greenButton {
+    background-color: #4CAF50;
+}
+
+.redButton {
+    background-color: red;
+}
+.orangeButton {
+    background-color: darkorange;
+}
+
+.button:hover {
+    background-color: #111;
+}

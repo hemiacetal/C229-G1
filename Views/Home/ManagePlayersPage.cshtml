@@ -1,0 +1,22 @@
+﻿@model Player
+@{
+    ViewBag.Title = "ManagePlayersPage";
+}
+<!DOCTYPE html>
+<html>
+<body>
+    <h2> Add Player </h2>
+        <form asp-action="ManagePlayersPage" method="post">
+            @await Html.PartialAsync("AddPlayer")
+            <div>
+                <button class="button greenButton" type="submit">
+                    Submit
+                </button>
+                <button class="button redButton" asp-action="Index" type="submit">
+                    Cancel
+                </button>
+            </div>
+        </form>
+</body>
+</html>
+

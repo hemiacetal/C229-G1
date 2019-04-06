@@ -1,0 +1,130 @@
+C:\Users\301052981\Desktop\Mariia_S_301052981\Mariia_S_301052981\bin\Debug\netcoreapp2.1\Mariia_S_301052981.deps.json
+C:\Users\301052981\Desktop\Mariia_S_301052981\Mariia_S_301052981\bin\Debug\netcoreapp2.1\Mariia_S_301052981.runtimeconfig.json
+C:\Users\301052981\Desktop\Mariia_S_301052981\Mariia_S_301052981\bin\Debug\netcoreapp2.1\Mariia_S_301052981.runtimeconfig.dev.json
+C:\Users\301052981\Desktop\Mariia_S_301052981\Mariia_S_301052981\bin\Debug\netcoreapp2.1\Mariia_S_301052981.dll
+C:\Users\301052981\Desktop\Mariia_S_301052981\Mariia_S_301052981\bin\Debug\netcoreapp2.1\Mariia_S_301052981.pdb
+C:\Users\301052981\Desktop\Mariia_S_301052981\Mariia_S_301052981\bin\Debug\netcoreapp2.1\Mariia_S_301052981.Views.dll
+C:\Users\301052981\Desktop\Mariia_S_301052981\Mariia_S_301052981\bin\Debug\netcoreapp2.1\Mariia_S_301052981.Views.pdb
+C:\Users\301052981\Desktop\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.csprojAssemblyReference.cache
+C:\Users\301052981\Desktop\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.csproj.CoreCompileInputs.cache
+C:\Users\301052981\Desktop\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.RazorAssemblyInfo.cache
+C:\Users\301052981\Desktop\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.RazorAssemblyInfo.cs
+C:\Users\301052981\Desktop\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.AssemblyInfoInputs.cache
+C:\Users\301052981\Desktop\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.AssemblyInfo.cs
+C:\Users\301052981\Desktop\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.TagHelpers.input.cache
+C:\Users\301052981\Desktop\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.TagHelpers.output.cache
+C:\Users\301052981\Desktop\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.RazorCoreGenerate.cache
+C:\Users\301052981\Desktop\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Home\AddClubPage.g.cshtml.cs
+C:\Users\301052981\Desktop\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Home\ClubDetailsPage.g.cshtml.cs
+C:\Users\301052981\Desktop\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Home\ClubPage.g.cshtml.cs
+C:\Users\301052981\Desktop\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\301052981\Desktop\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Home\ManagePlayersPage.g.cshtml.cs
+C:\Users\301052981\Desktop\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Shared\ClubForm.g.cshtml.cs
+C:\Users\301052981\Desktop\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\301052981\Desktop\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\301052981\Desktop\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\301052981\Desktop\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.RazorTargetAssemblyInfo.cache
+C:\Users\301052981\Desktop\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.RazorTargetAssemblyInfo.cs
+C:\Users\301052981\Desktop\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.Views.pdb
+C:\Users\301052981\Desktop\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.dll
+C:\Users\301052981\Desktop\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.pdb
+C:\Users\301052981\Desktop\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.csproj.CopyComplete
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\bin\Debug\netcoreapp2.1\Mariia_S_301052981.deps.json
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\bin\Debug\netcoreapp2.1\Mariia_S_301052981.runtimeconfig.json
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\bin\Debug\netcoreapp2.1\Mariia_S_301052981.runtimeconfig.dev.json
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\bin\Debug\netcoreapp2.1\Mariia_S_301052981.dll
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\bin\Debug\netcoreapp2.1\Mariia_S_301052981.pdb
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\bin\Debug\netcoreapp2.1\Mariia_S_301052981.Views.dll
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\bin\Debug\netcoreapp2.1\Mariia_S_301052981.Views.pdb
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.csprojAssemblyReference.cache
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.csproj.CoreCompileInputs.cache
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.RazorAssemblyInfo.cache
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.RazorAssemblyInfo.cs
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.AssemblyInfoInputs.cache
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.AssemblyInfo.cs
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.TagHelpers.input.cache
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.TagHelpers.output.cache
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.RazorCoreGenerate.cache
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Home\AddClubPage.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Home\ClubDetailsPage.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Home\ClubPage.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Home\ManagePlayersPage.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Shared\ClubForm.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.RazorTargetAssemblyInfo.cache
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.RazorTargetAssemblyInfo.cs
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.Views.pdb
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.dll
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.pdb
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.csproj.CopyComplete
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Home\Edit.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\Ass3\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Shared\AddPlayer.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.csprojAssemblyReference.cache
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.csproj.CoreCompileInputs.cache
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.RazorAssemblyInfo.cache
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.RazorAssemblyInfo.cs
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.AssemblyInfoInputs.cache
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.AssemblyInfo.cs
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.dll
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.pdb
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\bin\Debug\netcoreapp2.1\Mariia_S_301052981.deps.json
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\bin\Debug\netcoreapp2.1\Mariia_S_301052981.runtimeconfig.json
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\bin\Debug\netcoreapp2.1\Mariia_S_301052981.runtimeconfig.dev.json
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\bin\Debug\netcoreapp2.1\Mariia_S_301052981.dll
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\bin\Debug\netcoreapp2.1\Mariia_S_301052981.pdb
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\bin\Debug\netcoreapp2.1\Mariia_S_301052981.Views.dll
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\bin\Debug\netcoreapp2.1\Mariia_S_301052981.Views.pdb
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.TagHelpers.input.cache
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.TagHelpers.output.cache
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.RazorCoreGenerate.cache
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Home\AddClubPage.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Home\ClubDetailsPage.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Home\ClubPage.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Home\ManagePlayersPage.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Shared\AddPlayer.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Shared\ClubForm.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.RazorTargetAssemblyInfo.cache
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.RazorTargetAssemblyInfo.cs
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.Views.pdb
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.csproj.CopyComplete
+C:\Users\German Yakubovich\Desktop\ver2\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Home\EditClub.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\bin\Debug\netcoreapp2.1\Mariia_S_301052981.deps.json
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\bin\Debug\netcoreapp2.1\Mariia_S_301052981.runtimeconfig.json
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\bin\Debug\netcoreapp2.1\Mariia_S_301052981.runtimeconfig.dev.json
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\bin\Debug\netcoreapp2.1\Mariia_S_301052981.dll
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\bin\Debug\netcoreapp2.1\Mariia_S_301052981.pdb
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\bin\Debug\netcoreapp2.1\Mariia_S_301052981.Views.dll
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\bin\Debug\netcoreapp2.1\Mariia_S_301052981.Views.pdb
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.csprojAssemblyReference.cache
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.csproj.CoreCompileInputs.cache
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.RazorAssemblyInfo.cache
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.RazorAssemblyInfo.cs
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.AssemblyInfoInputs.cache
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.AssemblyInfo.cs
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.TagHelpers.input.cache
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.TagHelpers.output.cache
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.RazorCoreGenerate.cache
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Home\AddClubPage.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Home\ClubDetailsPage.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Home\ClubPage.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Home\EditClub.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Home\ManagePlayersPage.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Shared\AddPlayer.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Shared\ClubForm.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.RazorTargetAssemblyInfo.cache
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.RazorTargetAssemblyInfo.cs
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.Views.pdb
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.dll
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.pdb
+C:\Users\German Yakubovich\Desktop\Final\Mariia_S_301052981\Mariia_S_301052981\obj\Debug\netcoreapp2.1\Mariia_S_301052981.csproj.CopyComplete

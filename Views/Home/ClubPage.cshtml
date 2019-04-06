@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Club>
+@{
+    ViewBag.Title = "ClubPage";
+}
+<h2>Clubs</h2>
+
+<body>
+    <ul>
+
+        @foreach (Club club in Model)
+        {
+
+            <li>
+                <a asp-action="ClubDetailsPage" asp-route-name="@club.ClubFullName">@club.ClubFullName</a>
+
+                <form asp-action="Delete" method="post">
+
+                    <a class="button orangeButton" asp-action="EditClub" asp-route-name="@club.ClubFullName">Edit Club</a>
+                    <input type="hidden" name="name" value="@club.ClubFullName" />
+                    <button type="submit" class="button redButton"> Delete  </button>
+                </form>
+
+            </li>
+
+        }
+    </ul>
+</body>
+

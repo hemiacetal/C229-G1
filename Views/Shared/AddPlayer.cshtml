@@ -1,0 +1,33 @@
+﻿@model Player
+
+<div asp-validation-summary="All"></div>
+<div>
+    <label asp-for="PlayerName">Name:</label>
+    <input asp-for="PlayerName" />
+</div>
+<div>
+    <label asp-for="Age">Age:</label>
+    <input asp-for="Age" />
+</div>
+<div>
+    <label asp-for="CountryOfBirth">Country of Birth: </label>
+    <input asp-for="CountryOfBirth" />
+</div>
+<div>
+    <label asp-for="PlayingPosition">Position: </label>
+    <input asp-for="PlayingPosition" />
+</div>
+
+<div>
+    <label asp-for="ClubFullName">Club: </label><br />
+    <select asp-for="ClubFullName">
+        @foreach (Club club in ViewBag.ClubList)
+        {
+            <option value="@club.ClubFullName">@club.ClubFullName</option>
+
+        }
+    </select>
+</div>
+
+
+
