@@ -14,8 +14,13 @@
     <input asp-for="CountryOfBirth" />
 </div>
 <div>
-    <label asp-for="PlayingPosition">Position: </label>
-    <input asp-for="PlayingPosition" />
+    <label asp-for="PlayingPosition">Player Position:</label>
+    <select asp-for="PlayingPosition">
+        <option value="Defender">Defender</option>
+        <option value="Forward">Forward</option>
+        <option value="Goalkeeper">Goalkeeper</option>
+        <option value="Midfielder">Midfielder</option>
+    </select>
 </div>
 
 <div>

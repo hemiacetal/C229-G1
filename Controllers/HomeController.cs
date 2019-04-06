@@ -47,7 +47,6 @@ namespace Mariia_S_301052981.Controllers
 
             if (ModelState.IsValid)
             {
-
                 repositoryClub.Save(club);
                 return View("ClubPage", repositoryClub.Clubs);
             }
@@ -64,6 +63,7 @@ namespace Mariia_S_301052981.Controllers
             return View();
 
         }
+
 
         [HttpPost]
         public ViewResult ManagePlayersPage(Player player)

@@ -21,9 +21,24 @@
 
     <tr>
         <td>@Model.ClubFullName </td>
-        <td>@Model.Country </td>
-        <td>@Model.HeadCoachName </td>
-        <td>@Model.Ground </td>
+        <td>
+            @if (@Model.Country != null && !@Model.Country.Equals(""))
+            {<p>@Model.Country</p>}
+            else
+            {<p>[Not Specified]</p>}
+        </td>
+        <td>
+            @if (@Model.HeadCoachName != null && !@Model.HeadCoachName.Equals(""))
+            {<p>@Model.HeadCoachName</p>}
+            else
+            {<p>[Not Specified]</p>}
+        </td>
+        <td>
+            @if (@Model.Ground != null && !@Model.Ground.Equals(""))
+            {<p>@Model.Ground</p>}
+            else
+            {<p>[Not Specified]</p>}
+        </td>
        
 
         <td>
@@ -40,7 +55,7 @@
 </table>
 
 <div class="text-center">
-    <button class="button greenButton"><a asp-action="ManagePlayersPage">Add Players</a></button>
+    <button class="button greenButton" asp-action="ManagePlayersPage">Add Players</button>
 </div>
 
 

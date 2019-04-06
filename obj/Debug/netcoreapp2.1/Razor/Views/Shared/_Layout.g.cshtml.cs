@@ -58,7 +58,7 @@ using Mariia_S_301052981.Models;
             WriteLiteral("<!DOCTYPE html>\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(27, 180, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d4ea67d4667a4cf2bd7b23f7c028c360", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7c7882ec3d464b42bd9f11fafa57bbaa", async() => {
                 BeginContext(33, 72, true);
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>");
                 EndContext();
@@ -73,7 +73,7 @@ using Mariia_S_301052981.Models;
                 WriteLiteral("</title>\r\n    ");
                 EndContext();
                 BeginContext(133, 63, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "0bcef99f5c824634bd8fb2ac2dd1b0f7", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "1bf18d9d3bbd45a79f5a73eaaeba53e3", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -108,12 +108,12 @@ using Mariia_S_301052981.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(209, 632, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "01c7682792584839b04f34858fb8fe34", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4caaa440d94a4d2397bd38ee59d5f55e", async() => {
                 BeginContext(215, 130, true);
                 WriteLiteral("\r\n    <div id=\"header\">\r\n        <img id=\"logo\" src=\"/images/logo.png\" />\r\n    </div>\r\n\r\n    <nav>\r\n        <ul>\r\n            <li>");
                 EndContext();
                 BeginContext(345, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e0a9f510dcf24edda9e2b10731e75e1d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "51079070c3604a36b281795425d32d2f", async() => {
                     BeginContext(367, 6, true);
                     WriteLiteral(" Home ");
                     EndContext();
@@ -135,7 +135,7 @@ using Mariia_S_301052981.Models;
                 WriteLiteral("</li>\r\n            <li>");
                 EndContext();
                 BeginContext(400, 35, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c69916f3586f40afa95e10f6cc634d5e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cd5d820589514a03bbffc89fd729f13a", async() => {
                     BeginContext(425, 6, true);
                     WriteLiteral(" Club ");
                     EndContext();
@@ -157,7 +157,7 @@ using Mariia_S_301052981.Models;
                 WriteLiteral("</li>\r\n            <li>");
                 EndContext();
                 BeginContext(458, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "768c45efb6164bbdb29158fdcffd4584", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "78df1a2f4d4346b5ada5fc63a3b7dfbc", async() => {
                     BeginContext(486, 9, true);
                     WriteLiteral("Add Club ");
                     EndContext();
@@ -179,7 +179,7 @@ using Mariia_S_301052981.Models;
                 WriteLiteral("</li>\r\n            <li>");
                 EndContext();
                 BeginContext(522, 54, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "58fa070e2ec74599947f0ebd30df1828", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4832c736e0814056bddd0f2445619af5", async() => {
                     BeginContext(556, 16, true);
                     WriteLiteral(" Manage Players ");
                     EndContext();
