@@ -14,12 +14,12 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #line 2 "X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\Views\_ViewImports.cshtml"
-using Mariia_S_301052981.Models;
+using C229_G1.Models;
 
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7b0275ad7f15e2675f0f67ee6ae46f123f6267ca", @"/Views/Home/AddClubPage.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9f942054609654d40fd2c1caa97b34aeb0ab59a3", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7203fc9ddda4a3d8c68b08fac0a48799e6f0f523", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_AddClubPage : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Club>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Index", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -62,12 +62,12 @@ using Mariia_S_301052981.Models;
             WriteLiteral("<!DOCTYPE html>\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(83, 464, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bd1728bee6e44b1a8d1d29e89385bb15", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5d72b75387ec4c0583348c1dda83c750", async() => {
                 BeginContext(89, 35, true);
                 WriteLiteral("\r\n    <h2> Add Club </h2>\r\n        ");
                 EndContext();
                 BeginContext(124, 414, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2563ead7cef9468b999f93cc9cc1aac2", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3f4f4e110c9f453f96fb5dd2c3e05c29", async() => {
                     BeginContext(169, 14, true);
                     WriteLiteral("\r\n            ");
                     EndContext();
@@ -82,7 +82,7 @@ using Mariia_S_301052981.Models;
                     WriteLiteral("\r\n            <div>\r\n                <button class=\"button greenButton\" type=\"submit\">\r\n                    Submit\r\n                </button>\r\n\r\n                ");
                     EndContext();
                     BeginContext(380, 121, false);
-                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "970bbd672ad84a8bb19a02a30378c179", async() => {
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6a90aa55d45f4ccfab619f118ba9cc0e", async() => {
                         BeginContext(446, 46, true);
                         WriteLiteral("\r\n                    Cancel\r\n                ");
                         EndContext();

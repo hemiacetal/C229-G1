@@ -14,12 +14,12 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #line 2 "X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\Views\_ViewImports.cshtml"
-using Mariia_S_301052981.Models;
+using C229_G1.Models;
 
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0bb687950a5b0399b03fe15a2dcda4feb8cc8d70", @"/Views/Home/ClubPage.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9f942054609654d40fd2c1caa97b34aeb0ab59a3", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7203fc9ddda4a3d8c68b08fac0a48799e6f0f523", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_ClubPage : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<Club>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "ClubDetailsPage", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -62,7 +62,7 @@ using Mariia_S_301052981.Models;
             WriteLiteral("<h2>Clubs</h2>\r\n\r\n");
             EndContext();
             BeginContext(84, 686, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "80786cd552f74178bf2e87267388407b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d15ba9fb83b54b4883dc50832f84612f", async() => {
                 BeginContext(90, 14, true);
                 WriteLiteral("\r\n    <ul>\r\n\r\n");
                 EndContext();
@@ -77,7 +77,7 @@ using Mariia_S_301052981.Models;
                 WriteLiteral("        <li>\r\n            ");
                 EndContext();
                 BeginContext(182, 90, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b526acb06c044254a137b98cbb48ab8c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b66229e7adaf4a6c9332f86ef64de4c5", async() => {
                     BeginContext(251, 17, false);
 #line 14 "X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\Views\Home\ClubPage.cshtml"
                                                                            Write(club.ClubFullName);
@@ -124,12 +124,12 @@ using Mariia_S_301052981.Models;
                 WriteLiteral("                ");
                 EndContext();
                 BeginContext(344, 361, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "29e5daed99a24737a4b4371d1d896ecf", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc4933fe55594af4be9b6719c6f15129", async() => {
                     BeginContext(388, 24, true);
                     WriteLiteral("\r\n\r\n                    ");
                     EndContext();
                     BeginContext(412, 97, false);
-                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f423f844f972440f9da0adf559ab9565", async() => {
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "38b83461896b469e8ec636e4fe113f31", async() => {
                         BeginContext(501, 4, true);
                         WriteLiteral("Edit");
                         EndContext();
