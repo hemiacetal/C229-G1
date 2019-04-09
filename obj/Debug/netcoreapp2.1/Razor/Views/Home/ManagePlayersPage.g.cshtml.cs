@@ -67,12 +67,12 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(89, 471, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c4b621fb249f48c7a98090f8feac0655", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a6b3e7b672004fdbb4f3c0fac6313882", async() => {
                 BeginContext(95, 37, true);
                 WriteLiteral("\r\n    <h2> Add Player </h2>\r\n        ");
                 EndContext();
                 BeginContext(132, 419, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1f386a77105e4a458aa286c57ba62095", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "34a954022d714ba186ff17ba063ace8a", async() => {
                     BeginContext(183, 14, true);
                     WriteLiteral("\r\n            ");
                     EndContext();
@@ -87,7 +87,7 @@ using Microsoft.AspNetCore.Identity;
                     WriteLiteral("\r\n            <div>\r\n                <button class=\"button greenButton\" type=\"submit\">\r\n                    Submit\r\n                </button>\r\n                ");
                     EndContext();
                     BeginContext(393, 121, false);
-                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0be3bc201af942149de5b4377f7add1e", async() => {
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "83ffba86ba3a45b7ad560407a0931727", async() => {
                         BeginContext(459, 46, true);
                         WriteLiteral("\r\n                    Cancel\r\n                ");
                         EndContext();

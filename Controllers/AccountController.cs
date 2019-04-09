@@ -65,5 +65,29 @@ namespace C229_G1.Controllers
             await signInManager.SignOutAsync();
             return Redirect(returnUrl);
         }
+
+        [AllowAnonymous]
+        public ViewResult Register()
+        {
+            return View();
+        }
+        [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Register(RegisterViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = new UserModel { FirstName = model.FirstName, LastName = model.LastName, Email = model.Email, UserName = model.Email };
+                var result = await userManager.CreateAsync(user, model.Password);
+                if (result.Succeeded)
+                {
+                    await userManager.AddToRoleAsync(user, "General");
+                    return RedirectToAction("Login", "Account");
+                }
+            }
+            ModelState.AddModelError("", "");
+            return View(model);
+        }
     }
 }

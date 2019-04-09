@@ -1,0 +1,35 @@
+﻿@model C229_G1.Models.RegisterViewModel
+@{
+    ViewBag.title = "Register";
+}
+
+<div asp-validation-summary="All"></div>
+<form asp-action="Register" asp-controller="Account" method="post">
+    <div class="form-group">
+        <label asp-for="FirstName"></label>
+        <div><span asp-validation-for="FirstName"></span></div>
+        <input asp-for="FirstName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="LastName"></label>
+        <div><span asp-validation-for="LastName"></span></div>
+        <input asp-for="LastName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <div><span asp-validation-for="Email"></span></div>
+        <input asp-for="Email" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Password"></label>
+        <div><span asp-validation-for="Password"></span></div>
+        <input asp-for="Password" />
+    </div>
+    <div class="form-group">
+        <label asp-for="ConfirmPassword"></label>
+        <div><span asp-validation-for="ConfirmPassword"></span></div>
+        <input asp-for="ConfirmPassword" />
+    </div>
+    <button class=" button greenButton" type="submit">Register</button>
+</form>
+
