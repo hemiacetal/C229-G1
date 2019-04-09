@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Mariia_S_301052981.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Mariia_S_301052981.Controllers
@@ -36,17 +37,20 @@ namespace Mariia_S_301052981.Controllers
 
 
         [HttpGet]
+        [Authorize]
         public ViewResult AddClubPage()
         {
             return View();
         }
 
         [HttpPost]
+        [Authorize]
         public ViewResult AddClubPage(Club club)
         {
 
             if (ModelState.IsValid)
             {
+
                 repositoryClub.Save(club);
                 return View("ClubPage", repositoryClub.Clubs);
             }
@@ -56,6 +60,7 @@ namespace Mariia_S_301052981.Controllers
             }
         }
         [HttpGet]
+        [Authorize]
         public ViewResult ManagePlayersPage()
         {
 
@@ -64,8 +69,9 @@ namespace Mariia_S_301052981.Controllers
 
         }
 
-
+        
         [HttpPost]
+        [Authorize]
         public ViewResult ManagePlayersPage(Player player)
         {
             if (ModelState.IsValid)
@@ -81,11 +87,13 @@ namespace Mariia_S_301052981.Controllers
 
         }
 
+        [Authorize]
         public ViewResult EditClub(string name) => View(repositoryClub.Clubs.FirstOrDefault
             (c => c.ClubFullName == name));
 
 
         [HttpPost]
+        [Authorize]
         public IActionResult EditClub(Club club)
         {
             if (ModelState.IsValid)
@@ -102,12 +110,48 @@ namespace Mariia_S_301052981.Controllers
         }
 
         [HttpPost]
-        public IActionResult Delete(string name)
+        [Authorize]
+        public IActionResult DeleteClub(string name)
         {
             Club deletedClub = repositoryClub.DeleteClub(name);
             if (deletedClub != null)
             {
                 TempData["message"] = $"{deletedClub.ClubFullName} was successfully removed from the system";
+            }
+            return RedirectToAction("ClubPage", repositoryClub.Clubs);
+        }
+
+
+        [Authorize]
+        public ViewResult EditPlayer(string name) => View(repositoryPlayer.Players.FirstOrDefault
+        (p => p.PlayerName == name));
+
+
+        [HttpPost]
+        [Authorize]
+        public IActionResult EditPlayer(Player player)
+        {
+            if (ModelState.IsValid)
+            {
+                repositoryPlayer.Save(player);
+                TempData["message"] = $"{player.PlayerName} has been successfully modified";
+                return RedirectToAction("ClubPage", repositoryClub.Clubs);
+            }
+            else
+            {
+
+                return View(player);
+            }
+        }
+
+        [HttpPost]
+        [Authorize]
+        public IActionResult DeletePlayer(string name)
+        {
+            Player deletedPlayer = repositoryPlayer.DeletePlayer(name);
+            if (deletedPlayer != null)
+            {
+                TempData["message"] = $"{deletedPlayer.PlayerName} was successfully removed from the system";
             }
             return RedirectToAction("ClubPage", repositoryClub.Clubs);
         }

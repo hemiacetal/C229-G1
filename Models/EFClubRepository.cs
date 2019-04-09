@@ -35,10 +35,7 @@ namespace Mariia_S_301052981.Models
                     dbEntry.Country = club.Country;
                     dbEntry.HeadCoachName = club.HeadCoachName;
                     dbEntry.Ground = club.Ground;
-
-                    //dbEntry.Country = club?.Country ?? "None";
-                    //dbEntry.HeadCoachName = club?.HeadCoachName ?? "None";
-                    //dbEntry.Ground = club?.Ground ?? "None";
+                    //dbEntry.Players = club.Players;
 
                 }
             }

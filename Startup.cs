@@ -6,6 +6,7 @@ using Mariia_S_301052981.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -24,6 +25,11 @@ namespace Mariia_S_301052981
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration["Data:SoccerSystem:ConnectionString"]));
+            services.AddDbContext<AppIdentityDbContext>(options => options.UseSqlServer(Configuration["Data:SoccerSystemIdentity:ConnectionString"]));
+            services.AddIdentity<IdentityUser, IdentityRole>()
+            .AddEntityFrameworkStores<AppIdentityDbContext>()
+            .AddDefaultTokenProviders();
+
             services.AddTransient<IClubRepository, EFClubRepository>();
             services.AddTransient<IPlayerRepository, EFPlayerRepository>();
             services.AddMvc();
@@ -36,10 +42,14 @@ namespace Mariia_S_301052981
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseMvcWithDefaultRoute(); // adds MVC to the IApplicationBuilder request execution with a default route 
-            app.UseStaticFiles(); //marks the files in web root as servable  
+            // adds MVC to the IApplicationBuilder request execution with a default route   
             app.UseStatusCodePages();
+            app.UseStaticFiles(); //marks the files in web root as servable
+            app.UseAuthentication();
+            app.UseMvcWithDefaultRoute();
             SeedData.EnsurePoputated(app);
+            IdentitySeedData.EnsurePopulated(app);
+
         }
     }
 }

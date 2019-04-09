@@ -9,5 +9,6 @@ namespace Mariia_S_301052981.Models
     {
         IQueryable<Player> Players { get; }
         void Save(Player player);
+        Player DeletePlayer(string name);
     }
 }

@@ -29,12 +29,32 @@ namespace Mariia_S_301052981.Models
                 {
                     dbEntry.PlayerName = player.PlayerName;
                     dbEntry.Age = player?.Age ?? 0;
-                    dbEntry.CountryOfBirth = player?.CountryOfBirth ?? "None";
-                    dbEntry.PlayingPosition = player?.PlayingPosition ?? "None";
-                    dbEntry.ClubFullName = player.ClubFullName;
+                    dbEntry.CountryOfBirth = player?.CountryOfBirth;
+                    dbEntry.PlayingPosition = player?.PlayingPosition;
+                    //dbEntry.ClubFullName = player.ClubFullName;
                 }
             }
             context.SaveChanges();
+        }
+
+
+        public Player DeletePlayer(string name)
+        {
+            Player dbEntry = context.Players
+            .FirstOrDefault(p => p.PlayerName == name);
+            if (dbEntry != null)
+            {
+                //context.Players.RemoveRange(context.Players.Where(p => p.ClubFullName == name));
+                //context.Clubs.Remove(dbEntry);
+
+
+                //context.Clubs.Remove(context.)
+                //context.Players.RemoveRange(context.Players.Where(p => p.ClubFullName == name));
+                context.Players.Remove(dbEntry);
+                context.SaveChanges();
+
+            }
+            return dbEntry;
         }
     }
 }
