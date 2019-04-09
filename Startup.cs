@@ -32,6 +32,7 @@ namespace C229_G1
 
             services.AddTransient<IClubRepository, EFClubRepository>();
             services.AddTransient<IPlayerRepository, EFPlayerRepository>();
+            services.AddTransient<ILogRepository, EFLogRepository>();
             services.AddMvc();
         }
 

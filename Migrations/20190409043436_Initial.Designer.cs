@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace C229_G1.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20190406071811_Initial")]
+    [Migration("20190409043436_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -35,6 +35,23 @@ namespace C229_G1.Migrations
                     b.HasKey("ClubFullName");
 
                     b.ToTable("Clubs");
+                });
+
+            modelBuilder.Entity("C229_G1.Models.Log", b =>
+                {
+                    b.Property<int>("logID")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("action");
+
+                    b.Property<DateTime>("datetime");
+
+                    b.Property<string>("user");
+
+                    b.HasKey("logID");
+
+                    b.ToTable("Logs");
                 });
 
             modelBuilder.Entity("C229_G1.Models.Player", b =>

@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Log>
+@{
+    ViewBag.Title = "LogPage";
+}
+<h2>Action Logs</h2>
+
+<body>
+    @if (Model.Count() < 1)
+    {
+        <p>No actions have been logged as of recent.</p>
+    }
+    else
+    {
+        <table align="center">
+            <thead>
+                <tr>
+                    <th>Date/Time</th>
+                    <th>User</th>
+                    <th>Action Performed</th>
+
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (Log log in Model)
+                {
+                    <tr>
+                        <td>@log.datetime</td>
+                        <td>@log.user</td>
+                        <td>@log.action</td>
+                    </tr>
+                }
+                
+            </tbody>
+        </table>
+    }
+</body>
+

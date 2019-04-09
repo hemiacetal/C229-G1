@@ -35,6 +35,23 @@ namespace C229_G1.Migrations
                     b.ToTable("Clubs");
                 });
 
+            modelBuilder.Entity("C229_G1.Models.Log", b =>
+                {
+                    b.Property<int>("logID")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("action");
+
+                    b.Property<DateTime>("datetime");
+
+                    b.Property<string>("user");
+
+                    b.HasKey("logID");
+
+                    b.ToTable("Logs");
+                });
+
             modelBuilder.Entity("C229_G1.Models.Player", b =>
                 {
                     b.Property<string>("PlayerName")

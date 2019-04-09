@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace C229G1.Migrations
+namespace C229_G1.Migrations.AppIdentityDb
 {
     public partial class Initial : Migration
     {

@@ -21,6 +21,7 @@ X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.
 X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\Home\EditClub.g.cshtml.cs
 X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\Home\EditPlayer.g.cshtml.cs
 X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\Home\LogPage.g.cshtml.cs
 X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\Home\ManagePlayersPage.g.cshtml.cs
 X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\Shared\AddPlayer.g.cshtml.cs
 X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\Shared\ClubForm.g.cshtml.cs

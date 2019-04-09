@@ -12,11 +12,13 @@ namespace C229_G1.Controllers
     {
         private IClubRepository repositoryClub;
         private IPlayerRepository repositoryPlayer;
+        private ILogRepository repositoryLog;
 
-        public HomeController(IClubRepository repo, IPlayerRepository repo2)
+        public HomeController(IClubRepository repo, IPlayerRepository repo2, ILogRepository repo3)
         {
             repositoryClub = repo;
             repositoryPlayer = repo2;
+            repositoryLog = repo3;
         }
         public ViewResult Index()
         {
@@ -50,8 +52,8 @@ namespace C229_G1.Controllers
 
             if (ModelState.IsValid)
             {
-
                 repositoryClub.Save(club);
+                repositoryLog.Save(MakeLog($"Added Club \"{club.ClubFullName}\""));
                 return View("ClubPage", repositoryClub.Clubs);
             }
             else
@@ -59,6 +61,7 @@ namespace C229_G1.Controllers
                 return View();
             }
         }
+
         [HttpGet]
         [Authorize]
         public ViewResult ManagePlayersPage()
@@ -77,6 +80,7 @@ namespace C229_G1.Controllers
             if (ModelState.IsValid)
             {
                 repositoryPlayer.Save(player);
+                repositoryLog.Save(MakeLog($"Added Player \"{player.PlayerName}\" to Club \"{player.ClubFullName}\""));
                 return View("ClubPage", repositoryClub.Clubs);
             }
             else
@@ -84,7 +88,6 @@ namespace C229_G1.Controllers
                 ViewBag.ClubList = repositoryClub.Clubs;
                 return View(player);
             }
-
         }
 
         [Authorize(Roles = "Admin")]
@@ -99,6 +102,7 @@ namespace C229_G1.Controllers
             if (ModelState.IsValid)
             {
                 repositoryClub.Save(club);
+                repositoryLog.Save(MakeLog($"Modified Club \"{club.ClubFullName}\""));
                 TempData["message"] = $"{club.ClubFullName} has been successfully modified";
                 return RedirectToAction("ClubPage", repositoryClub.Clubs);
             }
@@ -116,6 +120,7 @@ namespace C229_G1.Controllers
             Club deletedClub = repositoryClub.DeleteClub(name);
             if (deletedClub != null)
             {
+                repositoryLog.Save(MakeLog($"Deleted Club \"{name}\""));
                 TempData["message"] = $"{deletedClub.ClubFullName} was successfully removed from the system";
             }
             return RedirectToAction("ClubPage", repositoryClub.Clubs);
@@ -151,9 +156,25 @@ namespace C229_G1.Controllers
             Player deletedPlayer = repositoryPlayer.DeletePlayer(name);
             if (deletedPlayer != null)
             {
+
                 TempData["message"] = $"{deletedPlayer.PlayerName} was successfully removed from the system";
             }
             return RedirectToAction("ClubPage", repositoryClub.Clubs);
+        }
+
+        [Authorize(Roles = "Admin")]
+        public ViewResult LogPage() => View(repositoryLog.Logs);
+
+        private Log MakeLog(string performed)
+        {
+            Log log = new Log
+            {
+                user = HttpContext.User.Identity.Name,
+                datetime = DateTime.Now,
+                action = performed
+            };
+
+            return log;
         }
 
     }
