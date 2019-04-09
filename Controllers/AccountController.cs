@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Mariia_S_301052981.Models;
+using C229_G1.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Mariia_S_301052981.Controllers
+namespace C229_G1.Controllers
 {
     [Authorize]
     public class AccountController : Controller

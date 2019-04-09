@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Mariia_S_301052981.Models
+namespace C229_G1.Models
 {
     public interface IPlayerRepository
     {

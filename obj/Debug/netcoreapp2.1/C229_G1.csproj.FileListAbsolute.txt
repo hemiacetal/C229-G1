@@ -1,0 +1,5 @@
+X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.csproj.CoreCompileInputs.cache
+X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.RazorAssemblyInfo.cache
+X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.RazorAssemblyInfo.cs
+X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.AssemblyInfoInputs.cache
+X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.AssemblyInfo.cs

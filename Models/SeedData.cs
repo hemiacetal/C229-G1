@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Mariia_S_301052981.Models
+namespace C229_G1.Models
 {
     public static  class SeedData
     {

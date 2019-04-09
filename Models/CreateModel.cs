@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace C229_G1.Models
 {
-    public class LoginModel
+    public class CreateModel
     {
         [Required]
         public string Name { get; set; }
         [Required]
-        [UIHint("password")]
+        public string Email { get; set; }
+        [Required]
         public string Password { get; set; }
-        public string ReturnUrl { get; set; } = "/";
     }
 }
-

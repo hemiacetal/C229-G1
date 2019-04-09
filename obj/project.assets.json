@@ -12537,11 +12537,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "x:\\Users\\hemi\\Documents\\college\\2\\COMP229\\C229-G1\\C229-G1\\C229-G1.csproj",
-      "projectName": "C229-G1",
-      "projectPath": "x:\\Users\\hemi\\Documents\\college\\2\\COMP229\\C229-G1\\C229-G1\\C229-G1.csproj",
+      "projectUniqueName": "X:\\Users\\hemi\\Documents\\college\\2\\COMP229\\C229-G1\\C229-G1\\C229_G1.csproj",
+      "projectName": "C229_G1",
+      "projectPath": "X:\\Users\\hemi\\Documents\\college\\2\\COMP229\\C229-G1\\C229-G1\\C229_G1.csproj",
       "packagesPath": "C:\\Users\\hemi\\.nuget\\packages\\",
-      "outputPath": "x:\\Users\\hemi\\Documents\\college\\2\\COMP229\\C229-G1\\C229-G1\\obj\\",
+      "outputPath": "X:\\Users\\hemi\\Documents\\college\\2\\COMP229\\C229-G1\\C229-G1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
