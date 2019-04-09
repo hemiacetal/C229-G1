@@ -37,14 +37,14 @@ namespace C229_G1.Controllers
 
 
         [HttpGet]
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         public ViewResult AddClubPage()
         {
             return View();
         }
 
         [HttpPost]
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         public ViewResult AddClubPage(Club club)
         {
 
@@ -87,13 +87,13 @@ namespace C229_G1.Controllers
 
         }
 
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         public ViewResult EditClub(string name) => View(repositoryClub.Clubs.FirstOrDefault
             (c => c.ClubFullName == name));
 
 
         [HttpPost]
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         public IActionResult EditClub(Club club)
         {
             if (ModelState.IsValid)
@@ -110,7 +110,7 @@ namespace C229_G1.Controllers
         }
 
         [HttpPost]
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         public IActionResult DeleteClub(string name)
         {
             Club deletedClub = repositoryClub.DeleteClub(name);

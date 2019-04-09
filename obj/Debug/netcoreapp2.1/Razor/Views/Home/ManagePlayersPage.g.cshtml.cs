@@ -18,8 +18,13 @@ using C229_G1.Models;
 
 #line default
 #line hidden
+#line 3 "X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f21d60d4989e0038f7fc4525c8e7ee5e82c34613", @"/Views/Home/ManagePlayersPage.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7203fc9ddda4a3d8c68b08fac0a48799e6f0f523", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"63abc5dd490739146c68c96be9d893abeff02fad", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_ManagePlayersPage : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Player>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("button redButton"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -62,12 +67,12 @@ using C229_G1.Models;
             WriteLiteral("<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(89, 471, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "104850774510446493bdb01ab358e08f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4565e134651348c5b2d7076861666cd0", async() => {
                 BeginContext(95, 37, true);
                 WriteLiteral("\r\n    <h2> Add Player </h2>\r\n        ");
                 EndContext();
                 BeginContext(132, 419, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "87fb76c4ca214f0184d2f77ca03108a6", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1e942081f220483d8b74207f5705e8d4", async() => {
                     BeginContext(183, 14, true);
                     WriteLiteral("\r\n            ");
                     EndContext();
@@ -82,7 +87,7 @@ using C229_G1.Models;
                     WriteLiteral("\r\n            <div>\r\n                <button class=\"button greenButton\" type=\"submit\">\r\n                    Submit\r\n                </button>\r\n                ");
                     EndContext();
                     BeginContext(393, 121, false);
-                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b7563c06bcec404a80b13ece7d47d823", async() => {
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "44cd29fb242049e280e1c1152273aae4", async() => {
                         BeginContext(459, 46, true);
                         WriteLiteral("\r\n                    Cancel\r\n                ");
                         EndContext();

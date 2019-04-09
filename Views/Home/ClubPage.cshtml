@@ -13,7 +13,7 @@
         <li>
             <a asp-action="ClubDetailsPage" asp-route-name="@club.ClubFullName">@club.ClubFullName</a>
 
-            @if (User.Identity.IsAuthenticated) { 
+            @if (User.IsInRole("Admin")) { 
                 <form asp-action="DeleteClub" method="post">
 
                     <a class="button orangeButton" asp-action="EditClub" asp-route-name="@club.ClubFullName">Edit</a>

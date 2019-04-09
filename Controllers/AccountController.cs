@@ -14,12 +14,20 @@ namespace C229_G1.Controllers
     {
         private UserManager<IdentityUser> userManager;
         private SignInManager<IdentityUser> signInManager;
+        private RoleManager<IdentityRole> roleManager;
+
         public AccountController(UserManager<IdentityUser> userMgr,
-        SignInManager<IdentityUser> signInMgr)
+        SignInManager<IdentityUser> signInMgr,
+        RoleManager<IdentityRole> roleMgr)
         {
             userManager = userMgr;
             signInManager = signInMgr;
+            roleManager = roleMgr;
+
+            roleManager.CreateAsync(new IdentityRole("Admin"));
+            roleManager.CreateAsync(new IdentityRole("General"));
         }
+
         [AllowAnonymous]
         public ViewResult Login(string returnUrl)
         {
@@ -50,6 +58,8 @@ namespace C229_G1.Controllers
             ModelState.AddModelError("", "Invalid name or password");
             return View(loginModel);
         }
+
+        [Authorize]
         public async Task<RedirectResult> Logout(string returnUrl = "/")
         {
             await signInManager.SignOutAsync();

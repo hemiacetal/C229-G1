@@ -15,21 +15,24 @@
     <nav>
         <ul>
 
+            <li><a asp-action="Index" asp-controller="Home"> Home </a></li>
+            <li><a asp-action="ClubPage" asp-controller="Home"> Club </a></li>
 
             @if (!User.Identity.IsAuthenticated)
 
             {
-                <li><a asp-action="Index"> Home </a></li>
-                <li><a asp-action="ClubPage"> Club </a></li>
+
                 <li><a asp-action="Login" asp-controller="Account"> Log In </a></li>
 
             }
             else
             {
-                <li><a asp-action="Index"> Home </a></li>
-                <li><a asp-action="ClubPage"> Club </a></li>
-                <li><a asp-action="AddClubPage">Add Club </a></li>
-                <li><a asp-action="ManagePlayersPage"> Manage Players </a></li>
+
+                if (User.IsInRole("Admin"))
+                {
+                    <li><a asp-action="AddClubPage" asp-controller="Home">Add Club </a></li>
+                }
+                <li><a asp-action="ManagePlayersPage" asp-controller="Home"> Manage Players </a></li>
                 <li><a asp-action="Logout" asp-controller="Account"> Log Out </a></li>
             }
 

@@ -12,15 +12,43 @@ namespace C229_G1.Models
     {
         private const string adminUser = "Admin";
         private const string adminPassword = "Secret123$";
+        private const string adminRole = "Admin";
+
+
+        private const string generalUser = "General";
+        private const string generalPassword = "Secret123$";
+        private const string generalRole = "General";
+
         public static async void EnsurePopulated(IApplicationBuilder app)
         {
-            UserManager<IdentityUser> userManager = app.ApplicationServices
-            .GetRequiredService<UserManager<IdentityUser>>();
-            IdentityUser user = await userManager.FindByIdAsync(adminUser);
-            if (user == null)
+            UserManager<IdentityUser> userManager =
+                app.ApplicationServices.GetRequiredService<UserManager<IdentityUser>>();
+
+            RoleManager<IdentityRole> roleManager =
+                app.ApplicationServices.GetRequiredService<RoleManager<IdentityRole>>();
+
+            if (await userManager.FindByNameAsync(adminUser) == null)
             {
-                user = new IdentityUser("Admin");
-                await userManager.CreateAsync(user, adminPassword);
+                if (await roleManager.FindByNameAsync(adminRole) == null)
+                {
+                    await roleManager.CreateAsync(new IdentityRole(adminRole));
+                    await roleManager.CreateAsync(new IdentityRole(generalRole));
+                }
+
+                IdentityUser user = new IdentityUser("Admin");
+                IdentityResult result = await userManager.CreateAsync(user, adminPassword);
+                if (result.Succeeded)
+                {
+                    await userManager.AddToRoleAsync(user, adminRole);
+                }
+
+                user = new IdentityUser("General");
+                result = await userManager.CreateAsync(user, generalPassword);
+                if (result.Succeeded)
+                {
+                    await userManager.AddToRoleAsync(user, generalRole);
+                }
+
             }
         }
     }

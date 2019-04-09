@@ -5,6 +5,7 @@ X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\bin\Debug\netcoreapp2.
 X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\bin\Debug\netcoreapp2.1\C229_G1.pdb
 X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\bin\Debug\netcoreapp2.1\C229_G1.Views.dll
 X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\bin\Debug\netcoreapp2.1\C229_G1.Views.pdb
+X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.csprojAssemblyReference.cache
 X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.csproj.CoreCompileInputs.cache
 X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.RazorAssemblyInfo.cache
 X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.RazorAssemblyInfo.cs
