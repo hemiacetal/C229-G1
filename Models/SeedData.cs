@@ -38,24 +38,24 @@ namespace C229_G1.Models
                     PlayerName = "Kepa Arrizabalaga",
                     Age = 24,
                     CountryOfBirth = "Spain",
-                    PlayingPosition = "GK",
-                    ClubFullName = "Chelsea Football Club"
-                },
+                    PlayingPosition = "Goalkeeper",
+                    ClubID = context.Clubs.FirstOrDefault(cl => cl.ClubFullName == "Chelsea Football Club").ClubID
+                }, 
                 new Player
                 {
                     PlayerName = "Antonio Rüdiger",
                     Age = 26,
                     CountryOfBirth = "Germany",
-                    PlayingPosition = "DF",
-                    ClubFullName = "Chelsea Football Club"
+                    PlayingPosition = "Defender",
+                    ClubID = context.Clubs.FirstOrDefault(cl => cl.ClubFullName == "Chelsea Football Club").ClubID
                 },
                 new Player
                 {
                     PlayerName = "Marcos Alonso",
                     Age = 28,
                     CountryOfBirth = "Spain",
-                    PlayingPosition = "DF",
-                    ClubFullName = "Chelsea Football Club"
+                    PlayingPosition = "Defender",
+                    ClubID = context.Clubs.FirstOrDefault(cl => cl.ClubFullName == "Chelsea Football Club").ClubID
                 },
 
 
@@ -65,24 +65,24 @@ namespace C229_G1.Models
                     PlayerName = "Marc-André ter Stegen",
                     Age = 26,
                     CountryOfBirth = "Germany",
-                    PlayingPosition = "GK",
-                    ClubFullName = "Futbol Club Barcelona"
+                    PlayingPosition = "Goalkeeper",
+                    ClubID = context.Clubs.FirstOrDefault(cl => cl.ClubFullName == "Futbol Club Barcelona").ClubID
                 },
                 new Player
                 {
                     PlayerName = "Nélson Semedo",
                     Age = 25,
                     CountryOfBirth = "Portugal",
-                    PlayingPosition = "DF",
-                    ClubFullName = "Futbol Club Barcelona"
+                    PlayingPosition = "Defender",
+                    ClubID = context.Clubs.FirstOrDefault(cl => cl.ClubFullName == "Futbol Club Barcelona").ClubID
                 },
                 new Player
                 {
                     PlayerName = "	Gerard Piqué",
                     Age = 32,
                     CountryOfBirth = "Spain",
-                    PlayingPosition = "DF",
-                    ClubFullName = "Futbol Club Barcelona"
+                    PlayingPosition = "Defender",
+                    ClubID = context.Clubs.FirstOrDefault(cl => cl.ClubFullName == "Futbol Club Barcelona").ClubID
                 },
 
 
@@ -92,24 +92,24 @@ namespace C229_G1.Models
                     PlayerName = "Fabinho",
                     Age = 25,
                     CountryOfBirth = "Brazil",
-                    PlayingPosition = "MF",
-                    ClubFullName = "Liverpool Football Club"
+                    PlayingPosition = "Midfielder",
+                    ClubID = context.Clubs.FirstOrDefault(cl => cl.ClubFullName == "Liverpool Football Club").ClubID
                 },
                 new Player
                 {
                     PlayerName = "Virgil van Dijk",
                     Age = 27,
                     CountryOfBirth = "Netherlands",
-                    PlayingPosition = "DF",
-                    ClubFullName = "Liverpool Football Club"
+                    PlayingPosition = "Defender",
+                    ClubID = context.Clubs.FirstOrDefault(cl => cl.ClubFullName == "Liverpool Football Club").ClubID
                 },
                 new Player
                 {
                     PlayerName = "Georginio Wijnaldum",
                     Age = 28,
                     CountryOfBirth = "Netherlands",
-                    PlayingPosition = "MF",
-                    ClubFullName = "Liverpool Football Club"
+                    PlayingPosition = "Midfielder",
+                    ClubID = context.Clubs.FirstOrDefault(cl => cl.ClubFullName == "Liverpool Football Club").ClubID
                 }
                 );
 

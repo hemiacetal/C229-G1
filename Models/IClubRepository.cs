@@ -9,7 +9,7 @@ namespace C229_G1.Models
     {
         IQueryable<Club> Clubs { get; }
         void Save(Club club);
-        Club DeleteClub(string name);
+        Club DeleteClub(int clubID);
 
     }
 }

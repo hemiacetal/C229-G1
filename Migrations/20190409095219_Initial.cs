@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace C229_G1.Migrations
 {
@@ -10,6 +11,8 @@ namespace C229_G1.Migrations
                 name: "Clubs",
                 columns: table => new
                 {
+                    ClubID = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     ClubFullName = table.Column<string>(nullable: false),
                     Country = table.Column<string>(nullable: true),
                     HeadCoachName = table.Column<string>(nullable: true),
@@ -17,34 +20,36 @@ namespace C229_G1.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Clubs", x => x.ClubFullName);
+                    table.PrimaryKey("PK_Clubs", x => x.ClubID);
                 });
 
             migrationBuilder.CreateTable(
                 name: "Players",
                 columns: table => new
                 {
+                    PlayerID = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     PlayerName = table.Column<string>(nullable: false),
                     Age = table.Column<int>(nullable: true),
                     CountryOfBirth = table.Column<string>(nullable: true),
                     PlayingPosition = table.Column<string>(nullable: true),
-                    ClubFullName = table.Column<string>(nullable: true)
+                    ClubID = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Players", x => x.PlayerName);
+                    table.PrimaryKey("PK_Players", x => x.PlayerID);
                     table.ForeignKey(
-                        name: "FK_Players_Clubs_ClubFullName",
-                        column: x => x.ClubFullName,
+                        name: "FK_Players_Clubs_ClubID",
+                        column: x => x.ClubID,
                         principalTable: "Clubs",
-                        principalColumn: "ClubFullName",
-                        onDelete: ReferentialAction.Restrict);
+                        principalColumn: "ClubID",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Players_ClubFullName",
+                name: "IX_Players_ClubID",
                 table: "Players",
-                column: "ClubFullName");
+                column: "ClubID");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

@@ -99,8 +99,7 @@ a {
 }
 
 
-
-form {
+.defaultForm{
     margin: auto;
     width: 500px;
     clear: both;
@@ -108,14 +107,15 @@ form {
     
 }
 
-    form input {
+    .defaultForm input {
         text-align: center;
         margin: 5px;
         width: 100%;
         clear: both;
     }
 
-    form select {
+    .defaultForm select {
+        height: 22px;
         margin: 5px;
         width: 100%;
         clear: both;
@@ -136,6 +136,7 @@ form {
 }
 
 .validation-summary-errors {
+    text-align: left;
     font-weight: bold;
     color: orangered;
 }

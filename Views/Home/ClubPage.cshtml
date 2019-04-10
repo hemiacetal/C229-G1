@@ -11,13 +11,13 @@
         {
 
         <li>
-            <a asp-action="ClubDetailsPage" asp-route-name="@club.ClubFullName">@club.ClubFullName</a>
+            <a asp-action="ClubDetailsPage" asp-route-clubID="@club.ClubID">@club.ClubFullName</a>
 
             @if (User.IsInRole("Admin")) { 
-                <form asp-action="DeleteClub" method="post">
+                <form class=" form defaultForm" asp-action="DeleteClub" method="post">
 
-                    <a class="button orangeButton" asp-action="EditClub" asp-route-name="@club.ClubFullName">Edit</a>
-                    <input type="hidden" name="name" value="@club.ClubFullName" />
+                    <a class="button orangeButton" asp-action="EditClub" asp-route-clubID="@club.ClubID">Edit</a>
+                    <input type="hidden" name="ClubID" value="@club.ClubID" />
                     <button type="submit" class="button redButton"> Delete  </button>
                 </form>
             }

@@ -20,14 +20,14 @@ namespace C229_G1.Models
 
         public void Save(Club club)
         {
-            if (!context.Clubs.Contains(club))
+            if (club.ClubID == 0)
             {
                 context.Clubs.Add(club);
             }
             else
             {
                 Club dbEntry = context.Clubs
-                .FirstOrDefault(c => c.ClubFullName == club.ClubFullName);
+                .FirstOrDefault(c => c.ClubID == club.ClubID);
                 if (dbEntry != null)
                 {
                     dbEntry.ClubFullName = club.ClubFullName;
@@ -43,14 +43,14 @@ namespace C229_G1.Models
         }
 
 
-        public Club DeleteClub(string name)
+        public Club DeleteClub(int clubID)
         {
             Club dbEntry = context.Clubs
-            .FirstOrDefault(c => c.ClubFullName == name);
+            .FirstOrDefault(c => c.ClubID == clubID);
             if (dbEntry != null)
             {
 
-                context.Players.RemoveRange(context.Players.Where(p => p.ClubFullName == name));
+                context.Players.RemoveRange(context.Players.Where(p => p.ClubID == clubID));
                 context.Clubs.Remove(dbEntry);
                 context.SaveChanges();
 

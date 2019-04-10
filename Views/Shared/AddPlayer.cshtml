@@ -3,10 +3,12 @@
 <div asp-validation-summary="All"></div>
 <div>
     <label asp-for="PlayerName">Name:</label>
+    @*<div><span asp-validation-for="PlayerName" class="validation-summary-errors"></span></div>*@
     <input asp-for="PlayerName" />
 </div>
 <div>
     <label asp-for="Age">Age:</label>
+    @*<div><span asp-validation-for="Age" class="validation-summary-errors"></span></div>*@
     <input asp-for="Age" />
 </div>
 <div>
@@ -24,11 +26,11 @@
 </div>
 
 <div>
-    <label asp-for="ClubFullName">Club: </label><br />
-    <select asp-for="ClubFullName">
+    <label asp-for="ClubID">Club: </label><br />
+    <select asp-for="ClubID">
         @foreach (Club club in ViewBag.ClubList)
         {
-            <option value="@club.ClubFullName">@club.ClubFullName</option>
+            <option value="@club.ClubID">@club.ClubFullName</option>
 
         }
     </select>

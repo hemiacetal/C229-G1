@@ -9,6 +9,6 @@ namespace C229_G1.Models
     {
         IQueryable<Player> Players { get; }
         void Save(Player player);
-        Player DeletePlayer(string name);
+        Player DeletePlayer(int playerID);
     }
 }

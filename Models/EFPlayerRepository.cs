@@ -17,39 +17,34 @@ namespace C229_G1.Models
 
         public void Save(Player player)
         {
-            if (!context.Players.Contains(player))
+            if (player.PlayerID == 0)
             {
                 context.Players.Add(player);
             }
             else
             {
                 Player dbEntry = context.Players
-                .FirstOrDefault(p => p.PlayerName == player.PlayerName);
+                .FirstOrDefault(p => p.PlayerID == player.PlayerID);
                 if (dbEntry != null)
                 {
                     dbEntry.PlayerName = player.PlayerName;
                     dbEntry.Age = player?.Age ?? 0;
-                    dbEntry.CountryOfBirth = player?.CountryOfBirth;
-                    dbEntry.PlayingPosition = player?.PlayingPosition;
-                    //dbEntry.ClubFullName = player.ClubFullName;
+                    dbEntry.CountryOfBirth = player.CountryOfBirth;
+                    dbEntry.PlayingPosition = player.PlayingPosition;
+                    //dbEntry.ClubFullName = player.ClubFullName; ???
                 }
             }
             context.SaveChanges();
         }
 
 
-        public Player DeletePlayer(string name)
+        public Player DeletePlayer(int playerID)
         {
             Player dbEntry = context.Players
-            .FirstOrDefault(p => p.PlayerName == name);
+            .FirstOrDefault(p => p.PlayerID == playerID);
             if (dbEntry != null)
             {
-                //context.Players.RemoveRange(context.Players.Where(p => p.ClubFullName == name));
-                //context.Clubs.Remove(dbEntry);
-
-
-                //context.Clubs.Remove(context.)
-                //context.Players.RemoveRange(context.Players.Where(p => p.ClubFullName == name));
+    
                 context.Players.Remove(dbEntry);
                 context.SaveChanges();
 

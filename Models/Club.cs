@@ -8,10 +8,12 @@ using System.Threading.Tasks;
 namespace C229_G1.Models
 {
     public class Club
-    {   
+    {
         [Key]
-        [Required(ErrorMessage = "*The name of the club is missing")]
+        public int ClubID { get; set; }
+        [Required(ErrorMessage = "Please enter a club name")]
         public string ClubFullName { get; set; }
+        //[MinLength (5, ErrorMessage = "Minimum length is 3 characters")]
         public string Country { get; set; }
         public string HeadCoachName { get; set; }
         public string Ground { get; set; }

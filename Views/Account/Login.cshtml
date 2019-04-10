@@ -3,7 +3,7 @@
     ViewBag.Title = "Log In";
 }
 <div asp-validation-summary="All"></div>
-<form asp-action="Login" asp-controller="Account" method="post">
+<form class= "form defaultForm" asp-action="Login" asp-controller="Account" method="post">
     <input type="hidden" asp-for="ReturnUrl" />
     <div class="form-group">
         <label asp-for="Name"></label>

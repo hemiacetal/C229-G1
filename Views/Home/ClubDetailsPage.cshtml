@@ -72,37 +72,36 @@
 
         @foreach (Player player in Model.Players)
         {
-        <tr>
-            <td>@player.PlayerName </td>
-            <td>
-                @if (@player.Age != null)
-                {<p>@player.Age</p>}
-            else
-            {<p>[Not Specified]</p>}
-            </td>
-            <td>
-                @if (@player.CountryOfBirth != null && !@player.CountryOfBirth.Equals(""))
-                {<p>@player.CountryOfBirth</p>}
+            <tr>
+                <td>@player.PlayerName </td>
+                <td>
+                    @if (@player.Age != null)
+                    {<p>@player.Age</p>}
                 else
                 {<p>[Not Specified]</p>}
-            </td>
-            <td>@player.PlayingPosition </td>
-
-
-            @if (User.Identity.IsAuthenticated)
-            {
-                <td>
-                    <form asp-action="DeletePlayer" method="post">
-
-                        <a class="button orangeButton" asp-action="EditPlayer" asp-route-name="@player.PlayerName">Edit</a>
-                        <input type="hidden" name="name" value="@player.PlayerName" />
-                        <button type="submit" class="button redButton"> Delete  </button>
-                    </form>
                 </td>
-            }
-        </tr>
-        }
+                <td>
+                    @if (@player.CountryOfBirth != null && !@player.CountryOfBirth.Equals(""))
+                    {<p>@player.CountryOfBirth</p>}
+                else
+                {<p>[Not Specified]</p>}
+                </td>
+                <td>@player.PlayingPosition </td>
 
+
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <td>
+                        <form id="playersForm" asp-action="DeletePlayer" method="post">
+
+                            <a class="button orangeButton" asp-action="EditPlayer" asp-route-playerID="@player.PlayerID">Edit</a>
+                            <input type="hidden" name="PlayerID" value="@player.PlayerID" />
+                            <button type="submit" class="button redButton"> Delete  </button>
+                        </form>
+                    </td>
+                }
+            </tr>
+        }
 
     </table>
 }

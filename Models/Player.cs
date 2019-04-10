@@ -9,12 +9,15 @@ namespace C229_G1.Models
     public class Player
     {
         [Key]
-        [Required(ErrorMessage = "*The name of the player is missing")]
+        public int PlayerID { get; set; }
+        [Required(ErrorMessage = "Please enter a player name")]
         public string PlayerName { get; set; }
+        [Range(16, 55, ErrorMessage ="Player should be between 16 and 55 years old")]
         public int? Age { get; set; }
+        //[MinLength(5, ErrorMessage = "Minimum length is 3 characters")]
         public string CountryOfBirth { get; set; } 
         public string PlayingPosition { get; set; }
-        public string ClubFullName { get; set; }
+        public int ClubID { get; set; }
         
     }
 }

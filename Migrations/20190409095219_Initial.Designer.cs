@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace C229_G1.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20190406071811_Initial")]
+    [Migration("20190409095219_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -23,8 +23,12 @@ namespace C229_G1.Migrations
 
             modelBuilder.Entity("C229_G1.Models.Club", b =>
                 {
+                    b.Property<int>("ClubID")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
                     b.Property<string>("ClubFullName")
-                        .ValueGeneratedOnAdd();
+                        .IsRequired();
 
                     b.Property<string>("Country");
 
@@ -32,27 +36,31 @@ namespace C229_G1.Migrations
 
                     b.Property<string>("HeadCoachName");
 
-                    b.HasKey("ClubFullName");
+                    b.HasKey("ClubID");
 
                     b.ToTable("Clubs");
                 });
 
             modelBuilder.Entity("C229_G1.Models.Player", b =>
                 {
-                    b.Property<string>("PlayerName")
-                        .ValueGeneratedOnAdd();
+                    b.Property<int>("PlayerID")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int?>("Age");
 
-                    b.Property<string>("ClubFullName");
+                    b.Property<int>("ClubID");
 
                     b.Property<string>("CountryOfBirth");
 
+                    b.Property<string>("PlayerName")
+                        .IsRequired();
+
                     b.Property<string>("PlayingPosition");
 
-                    b.HasKey("PlayerName");
+                    b.HasKey("PlayerID");
 
-                    b.HasIndex("ClubFullName");
+                    b.HasIndex("ClubID");
 
                     b.ToTable("Players");
                 });
@@ -61,7 +69,8 @@ namespace C229_G1.Migrations
                 {
                     b.HasOne("C229_G1.Models.Club")
                         .WithMany("Players")
-                        .HasForeignKey("ClubFullName");
+                        .HasForeignKey("ClubID")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }

@@ -6,7 +6,7 @@
 <html>
 <body>
     <h2> Add Player </h2>
-        <form asp-action="ManagePlayersPage" method="post">
+        <form class="form defaultForm" asp-action="ManagePlayersPage" method="post">
             @await Html.PartialAsync("AddPlayer")
             <div>
                 <button class="button greenButton" type="submit">

@@ -29,9 +29,9 @@ namespace C229_G1.Controllers
         }
 
 
-        public ViewResult ClubDetailsPage(string name)
+        public ViewResult ClubDetailsPage(int clubID)
         {
-            Club club = repositoryClub.Clubs.FirstOrDefault(c => c.ClubFullName == name);
+            Club club = repositoryClub.Clubs.FirstOrDefault(c => c.ClubID == clubID);
             return View(club);
         }
 
@@ -74,6 +74,15 @@ namespace C229_G1.Controllers
         [Authorize]
         public ViewResult ManagePlayersPage(Player player)
         {
+            try
+            {
+                repositoryClub.Clubs.First(c => c.ClubID == player.ClubID).Equals(0);
+            }
+            catch
+            {
+                
+                ModelState.AddModelError(string.Empty, $"*Selected club does not exist in the system."); 
+            }
             if (ModelState.IsValid)
             {
                 repositoryPlayer.Save(player);
@@ -88,18 +97,28 @@ namespace C229_G1.Controllers
         }
 
         [Authorize(Roles = "Admin")]
-        public ViewResult EditClub(string name) => View(repositoryClub.Clubs.FirstOrDefault
-            (c => c.ClubFullName == name));
+        public ViewResult EditClub(int clubID) => View(repositoryClub.Clubs.FirstOrDefault
+            (c => c.ClubID == clubID));
 
 
         [HttpPost]
         [Authorize(Roles = "Admin")]
         public IActionResult EditClub(Club club)
         {
+            try
+            {
+                repositoryClub.Clubs.FirstOrDefault(c => c.ClubID == club.ClubID).Equals(null);
+            }
+            catch
+            {
+
+                ModelState.AddModelError(string.Empty, $"*Club {club.ClubFullName} was removed from the system and cannot be edited.");
+            }
+
             if (ModelState.IsValid)
             {
                 repositoryClub.Save(club);
-                TempData["message"] = $"{club.ClubFullName} has been successfully modified";
+                TempData["message"] = $"Club {club.ClubFullName} has been successfully modified";
                 return RedirectToAction("ClubPage", repositoryClub.Clubs);
             }
             else
@@ -111,47 +130,57 @@ namespace C229_G1.Controllers
 
         [HttpPost]
         [Authorize(Roles = "Admin")]
-        public IActionResult DeleteClub(string name)
+        public IActionResult DeleteClub(int clubID)
         {
-            Club deletedClub = repositoryClub.DeleteClub(name);
+            Club deletedClub = repositoryClub.DeleteClub(clubID);
             if (deletedClub != null)
             {
-                TempData["message"] = $"{deletedClub.ClubFullName} was successfully removed from the system";
+                TempData["message"] = $"Club {deletedClub.ClubFullName} was successfully removed from the system";
             }
             return RedirectToAction("ClubPage", repositoryClub.Clubs);
         }
 
 
         [Authorize]
-        public ViewResult EditPlayer(string name) => View(repositoryPlayer.Players.FirstOrDefault
-        (p => p.PlayerName == name));
+        public ViewResult EditPlayer(int playerID) => View(repositoryPlayer.Players.FirstOrDefault
+        (p => p.PlayerID == playerID));
 
 
         [HttpPost]
         [Authorize]
         public IActionResult EditPlayer(Player player)
         {
+            try
+            {
+              
+                repositoryPlayer.Players.FirstOrDefault(p => p.ClubID == player.ClubID).Equals(null);
+               
+            }
+            catch
+            {
+                ModelState.AddModelError(string.Empty, $"*Player {player.PlayerName} was removed from the system and cannot be edited.");
+            }
             if (ModelState.IsValid)
             {
                 repositoryPlayer.Save(player);
-                TempData["message"] = $"{player.PlayerName} has been successfully modified";
+                TempData["message"] = $"Player {player.PlayerName} has been successfully modified";
                 return RedirectToAction("ClubPage", repositoryClub.Clubs);
+               
             }
             else
             {
-
                 return View(player);
             }
         }
 
         [HttpPost]
         [Authorize]
-        public IActionResult DeletePlayer(string name)
+        public IActionResult DeletePlayer(int playerID)
         {
-            Player deletedPlayer = repositoryPlayer.DeletePlayer(name);
+            Player deletedPlayer = repositoryPlayer.DeletePlayer(playerID);
             if (deletedPlayer != null)
             {
-                TempData["message"] = $"{deletedPlayer.PlayerName} was successfully removed from the system";
+                TempData["message"] = $"Player {deletedPlayer.PlayerName} was successfully removed from the system";
             }
             return RedirectToAction("ClubPage", repositoryClub.Clubs);
         }
