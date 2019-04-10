@@ -55,8 +55,11 @@ namespace C229_G1.Controllers
                         return Redirect(loginModel?.ReturnUrl ?? "/Home/Index");
                     }
                 }
+                else
+                {
+                    ModelState.AddModelError("", "Invalid name or password.");
+                }
             }
-            ModelState.AddModelError("", "Invalid name or password");
             return View(loginModel);
         }
 

@@ -1,38 +1,3 @@
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\bin\Debug\netcoreapp2.1\C229_G1.deps.json
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\bin\Debug\netcoreapp2.1\C229_G1.runtimeconfig.json
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\bin\Debug\netcoreapp2.1\C229_G1.runtimeconfig.dev.json
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\bin\Debug\netcoreapp2.1\C229_G1.dll
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\bin\Debug\netcoreapp2.1\C229_G1.pdb
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\bin\Debug\netcoreapp2.1\C229_G1.Views.dll
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\bin\Debug\netcoreapp2.1\C229_G1.Views.pdb
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.csprojAssemblyReference.cache
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.csproj.CoreCompileInputs.cache
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.RazorAssemblyInfo.cache
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.RazorAssemblyInfo.cs
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.AssemblyInfoInputs.cache
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.AssemblyInfo.cs
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.TagHelpers.input.cache
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.TagHelpers.output.cache
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.RazorCoreGenerate.cache
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.g.cshtml.cs
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\Home\AddClubPage.g.cshtml.cs
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\Home\ClubDetailsPage.g.cshtml.cs
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\Home\ClubPage.g.cshtml.cs
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\Home\EditClub.g.cshtml.cs
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\Home\EditPlayer.g.cshtml.cs
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\Home\ManagePlayersPage.g.cshtml.cs
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\Shared\AddPlayer.g.cshtml.cs
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\Shared\ClubForm.g.cshtml.cs
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.RazorTargetAssemblyInfo.cache
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.RazorTargetAssemblyInfo.cs
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.Views.pdb
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.dll
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.pdb
-X:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.csproj.CopyComplete
 C:\Users\German Yakubovich\Desktop\C229-G1\C229-G1\bin\Debug\netcoreapp2.1\C229_G1.deps.json
 C:\Users\German Yakubovich\Desktop\C229-G1\C229-G1\bin\Debug\netcoreapp2.1\C229_G1.runtimeconfig.json
 C:\Users\German Yakubovich\Desktop\C229-G1\C229-G1\bin\Debug\netcoreapp2.1\C229_G1.runtimeconfig.dev.json
@@ -68,3 +33,38 @@ C:\Users\German Yakubovich\Desktop\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_
 C:\Users\German Yakubovich\Desktop\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.dll
 C:\Users\German Yakubovich\Desktop\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.pdb
 C:\Users\German Yakubovich\Desktop\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.csproj.CopyComplete
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\bin\Debug\netcoreapp2.1\C229_G1.deps.json
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\bin\Debug\netcoreapp2.1\C229_G1.runtimeconfig.json
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\bin\Debug\netcoreapp2.1\C229_G1.runtimeconfig.dev.json
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\bin\Debug\netcoreapp2.1\C229_G1.dll
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\bin\Debug\netcoreapp2.1\C229_G1.pdb
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\bin\Debug\netcoreapp2.1\C229_G1.Views.dll
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\bin\Debug\netcoreapp2.1\C229_G1.Views.pdb
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.csprojAssemblyReference.cache
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.csproj.CoreCompileInputs.cache
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.RazorAssemblyInfo.cache
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.RazorAssemblyInfo.cs
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.AssemblyInfoInputs.cache
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.AssemblyInfo.cs
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.TagHelpers.input.cache
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.TagHelpers.output.cache
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.RazorCoreGenerate.cache
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.g.cshtml.cs
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\Home\AddClubPage.g.cshtml.cs
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\Home\ClubDetailsPage.g.cshtml.cs
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\Home\ClubPage.g.cshtml.cs
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\Home\EditClub.g.cshtml.cs
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\Home\EditPlayer.g.cshtml.cs
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\Home\ManagePlayersPage.g.cshtml.cs
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\Shared\AddPlayer.g.cshtml.cs
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\Shared\ClubForm.g.cshtml.cs
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.RazorTargetAssemblyInfo.cache
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.RazorTargetAssemblyInfo.cs
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.Views.pdb
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.dll
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.pdb
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.csproj.CopyComplete
