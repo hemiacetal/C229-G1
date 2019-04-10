@@ -60,10 +60,10 @@ namespace C229_G1.Controllers
         }
 
         [Authorize]
-        public async Task<RedirectResult> Logout(string returnUrl = "/")
+        public async Task<IActionResult> Logout()
         {
             await signInManager.SignOutAsync();
-            return Redirect(returnUrl);
+            return RedirectToAction("Index", "Home");
         }
     }
 }
