@@ -23,6 +23,7 @@
             {
 
                 <li><a asp-action="Login" asp-controller="Account"> Log In </a></li>
+                <li><a asp-action="Register" asp-controller="Account"> Register </a></li>
 
             }
             else
@@ -31,8 +32,16 @@
                 if (User.IsInRole("Admin"))
                 {
                     <li><a asp-action="AddClubPage" asp-controller="Home">Add Club </a></li>
+                  
                 }
                 <li><a asp-action="ManagePlayersPage" asp-controller="Home"> Manage Players </a></li>
+
+                if (User.IsInRole("Admin"))
+                {
+                    
+                    <li><a asp-action="###" asp-controller="###">Registered Users</a></li>
+                }
+
                 <li><a asp-action="Logout" asp-controller="Account"> Log Out </a></li>
             }
 

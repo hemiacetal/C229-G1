@@ -68,3 +68,4 @@ C:\Users\German Yakubovich\Desktop\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_
 C:\Users\German Yakubovich\Desktop\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.dll
 C:\Users\German Yakubovich\Desktop\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.pdb
 C:\Users\German Yakubovich\Desktop\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.csproj.CopyComplete
+C:\Users\German Yakubovich\Desktop\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\Account\Register.g.cshtml.cs
