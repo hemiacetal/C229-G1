@@ -60,10 +60,10 @@ namespace C229_G1.Controllers
         }
 
         [Authorize]
-        public async Task<RedirectResult> Logout(string returnUrl = "/")
+        public async Task<IActionResult> Logout()
         {
             await signInManager.SignOutAsync();
-            return Redirect(returnUrl);
+            return RedirectToAction("Index","Home");
         }
 
         [AllowAnonymous]
@@ -74,15 +74,16 @@ namespace C229_G1.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Register(RegisterViewModel model)
+        public async Task<IActionResult> Register(UserModel model)
         {
             if (ModelState.IsValid)
             {
-                var user = new UserModel { FirstName = model.FirstName, LastName = model.LastName, Email = model.Email, UserName = model.Email };
+                var user = new UserModel { FirstName = model.FirstName, LastName = model.LastName, Email = model.Email, UserName = model.UserName };
                 var result = await userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
                     await userManager.AddToRoleAsync(user, "General");
+                    TempData["message"] = $"{user.UserName} has been registered!";
                     return RedirectToAction("Login", "Account");
                 }
             }

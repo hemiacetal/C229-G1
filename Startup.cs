@@ -26,7 +26,14 @@ namespace C229_G1
         {
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration["Data:SoccerSystem:ConnectionString"]));
             services.AddDbContext<AppIdentityDbContext>(options => options.UseSqlServer(Configuration["Data:SoccerSystemIdentity:ConnectionString"]));
-            services.AddIdentity<IdentityUser, IdentityRole>()
+            services.AddIdentity<IdentityUser, IdentityRole>(opts =>
+            {
+                opts.Password.RequiredLength = 6;
+                opts.Password.RequireNonAlphanumeric = false;
+                opts.Password.RequireLowercase = true;
+                opts.Password.RequireUppercase = true;
+                opts.Password.RequireDigit = true;
+            })
             .AddEntityFrameworkStores<AppIdentityDbContext>()
             .AddDefaultTokenProviders();
 

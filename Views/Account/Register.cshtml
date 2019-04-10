@@ -1,33 +1,39 @@
-﻿@model C229_G1.Models.RegisterViewModel
+﻿@model UserModel
 @{
     ViewBag.title = "Register";
 }
 
-<div asp-validation-summary="All"></div>
+<div asp-validation-summary="ModelOnly"/>
 <form asp-action="Register" asp-controller="Account" method="post">
+
     <div class="form-group">
-        <label asp-for="FirstName"></label>
-        <div><span asp-validation-for="FirstName"></span></div>
-        <input asp-for="FirstName" class="form-control" />
+        <label asp-for="UserName">Username</label>
+        <div><span asp-validation-for="UserName"/></div>
+        <input asp-for="UserName" class="form-control" />
     </div>
     <div class="form-group">
-        <label asp-for="LastName"></label>
-        <div><span asp-validation-for="LastName"></span></div>
-        <input asp-for="LastName" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="Email"></label>
-        <div><span asp-validation-for="Email"></span></div>
+        <label asp-for="Email">Email</label>
+        <div><span asp-validation-for="Email"/></div>
         <input asp-for="Email" class="form-control" />
     </div>
     <div class="form-group">
-        <label asp-for="Password"></label>
-        <div><span asp-validation-for="Password"></span></div>
+        <label asp-for="FirstName">First Name</label>
+        <div><span asp-validation-for="FirstName"/></div>
+        <input asp-for="FirstName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="LastName">Last Name</label>
+        <div><span asp-validation-for="LastName"/></div>
+        <input asp-for="LastName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Password">Password</label>
+        <div><span asp-validation-for="Password"/></div>
         <input asp-for="Password" />
     </div>
     <div class="form-group">
-        <label asp-for="ConfirmPassword"></label>
-        <div><span asp-validation-for="ConfirmPassword"></span></div>
+        <label asp-for="ConfirmPassword">Confirm Password</label>
+        <div><span asp-validation-for="ConfirmPassword"/></div>
         <input asp-for="ConfirmPassword" />
     </div>
     <button class=" button greenButton" type="submit">Register</button>
