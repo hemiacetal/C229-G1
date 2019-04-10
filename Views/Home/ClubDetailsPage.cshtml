@@ -87,19 +87,6 @@
                 {<p>[Not Specified]</p>}
                 </td>
                 <td>@player.PlayingPosition </td>
-
-
-                @if (User.Identity.IsAuthenticated)
-                {
-                    <td>
-                        <form id="playersForm" asp-action="DeletePlayer" method="post">
-
-                            <a class="button orangeButton" asp-action="EditPlayer" asp-route-playerID="@player.PlayerID">Edit</a>
-                            <input type="hidden" name="PlayerID" value="@player.PlayerID" />
-                            <button type="submit" class="button redButton"> Delete  </button>
-                        </form>
-                    </td>
-                }
             </tr>
         }
 

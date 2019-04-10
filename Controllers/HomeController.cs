@@ -139,52 +139,6 @@ namespace C229_G1.Controllers
             }
             return RedirectToAction("ClubPage", repositoryClub.Clubs);
         }
-
-
-        [Authorize]
-        public ViewResult EditPlayer(int playerID) => View(repositoryPlayer.Players.FirstOrDefault
-        (p => p.PlayerID == playerID));
-
-
-        [HttpPost]
-        [Authorize]
-        public IActionResult EditPlayer(Player player)
-        {
-            try
-            {
-              
-                repositoryPlayer.Players.FirstOrDefault(p => p.ClubID == player.ClubID).Equals(null);
-               
-            }
-            catch
-            {
-                ModelState.AddModelError(string.Empty, $"*Player {player.PlayerName} was removed from the system and cannot be edited.");
-            }
-            if (ModelState.IsValid)
-            {
-                repositoryPlayer.Save(player);
-                TempData["message"] = $"Player {player.PlayerName} has been successfully modified";
-                return RedirectToAction("ClubPage", repositoryClub.Clubs);
-               
-            }
-            else
-            {
-                return View(player);
-            }
-        }
-
-        [HttpPost]
-        [Authorize]
-        public IActionResult DeletePlayer(int playerID)
-        {
-            Player deletedPlayer = repositoryPlayer.DeletePlayer(playerID);
-            if (deletedPlayer != null)
-            {
-                TempData["message"] = $"Player {deletedPlayer.PlayerName} was successfully removed from the system";
-            }
-            return RedirectToAction("ClubPage", repositoryClub.Clubs);
-        }
-
     }
 }
 
