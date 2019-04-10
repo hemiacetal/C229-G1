@@ -64,6 +64,7 @@ namespace C229_G1.Controllers
         public async Task<IActionResult> Logout()
         {
             await signInManager.SignOutAsync();
+            TempData["message"] = "You have successfully been logged out.";
             return RedirectToAction("Index","Home");
         }
     }
