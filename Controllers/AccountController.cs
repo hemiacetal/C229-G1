@@ -53,6 +53,7 @@ namespace C229_G1.Controllers
                     if ((await signInManager.PasswordSignInAsync(user,
                     loginModel.Password, false, false)).Succeeded)
                     {
+                        TempData["message"] = "Welcome, " + user.UserName;
                         return Redirect(loginModel?.ReturnUrl ?? "/Home/Index");
                     }
                     else
