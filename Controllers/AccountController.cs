@@ -136,6 +136,7 @@ namespace C229_G1.Controllers
             else
             {
                 ModelState.AddModelError("", "User Not Found");
+                TempData["message"] = "User not found.";
             }
             return View("Index", userManager.Users);
         }
