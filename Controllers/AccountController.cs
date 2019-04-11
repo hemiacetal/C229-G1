@@ -6,18 +6,19 @@ using C229_G1.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace C229_G1.Controllers
 {
     [Authorize]
     public class AccountController : Controller
     {
-        private UserManager<IdentityUser> userManager;
-        private SignInManager<IdentityUser> signInManager;
+        private UserManager<UserModel> userManager;
+        private SignInManager<UserModel> signInManager;
         private RoleManager<IdentityRole> roleManager;
 
-        public AccountController(UserManager<IdentityUser> userMgr,
-        SignInManager<IdentityUser> signInMgr,
+        public AccountController(UserManager<UserModel> userMgr,
+        SignInManager<UserModel> signInMgr,
         RoleManager<IdentityRole> roleMgr)
         {
             userManager = userMgr;
@@ -36,6 +37,7 @@ namespace C229_G1.Controllers
                 ReturnUrl = returnUrl
             });
         }
+
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
@@ -43,7 +45,7 @@ namespace C229_G1.Controllers
         {
             if (ModelState.IsValid)
             {
-                IdentityUser user =
+                UserModel user =
                 await userManager.FindByNameAsync(loginModel.Name);
                 if (user != null)
                 {
@@ -53,48 +55,51 @@ namespace C229_G1.Controllers
                     {
                         return Redirect(loginModel?.ReturnUrl ?? "/Home/Index");
                     }
+                    else
+                    {
+                        ModelState.AddModelError("Name", "Username/Password Combination not in Database.");
+                    }
+                }
+                else
+                {
+                    ModelState.AddModelError("Name", "Username/Password Combination not in Database.");
                 }
             }
-            ModelState.AddModelError("", "Invalid name or password");
             return View(loginModel);
         }
 
         [AllowAnonymous]
-        public ViewResult Register(string returnUrl)
+        public ViewResult Register()
         {
-            return View(new RegistrationModel
-            {
-                ReturnUrl = returnUrl
-            });
+            return View();
         }
+
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Register(RegistrationModel registrationModel)
+        public async Task<IActionResult> Register(RegistrationModel model)
         {
             if (ModelState.IsValid)
             {
-                //IdentityUser user =
-                //await userManager.FindByNameAsync(registrationModel.Username);
-                //if (user != null)
-                //{
-                //    await signInManager.SignOutAsync();
-                //    if ((await signInManager.PasswordSignInAsync(user,
-                //    registrationModel.Password, false, false)).Succeeded)
-                //    {
-                       
-                     TempData["message"] = $"Thank you for registering {registrationModel.Username}. Please enter your credentials to Log In";
-                           
-                       return Redirect("/Account/Login");
-                //    }
-                //}
+                var user = new UserModel { FirstName = model.FirstName, LastName = model.LastName, Email = model.Email, UserName = model.UserName };
+                var result = await userManager.CreateAsync(user, model.Password);
+                if (result.Succeeded)
+                {
+                    await userManager.AddToRoleAsync(user, "General");
+                    TempData["message"] = $"Thank you for registering, {model.UserName}. Please enter your credentials to log in.";
+                    return RedirectToAction("Login", "Account");
+                }
+                else
+                {
+                    AddErrorsFromResult(result);
+                }
             }
-            ModelState.AddModelError("", "Invalid name or password");
-            return View(registrationModel);
+            
+            if (ModelState.IsValid)
+                ModelState.AddModelError("UserName", "Username Already In Use.");
+
+            return View(model);
         }
-
-
-
 
         [Authorize]
         public async Task<IActionResult> Logout()
@@ -102,6 +107,45 @@ namespace C229_G1.Controllers
             await signInManager.SignOutAsync();
             TempData["message"] = "You have successfully been logged out.";
             return RedirectToAction("Index", "Home");
+        }
+
+        [Authorize(Roles = "Admin")]
+        public async Task<ViewResult> Users() {
+            var users = await userManager.Users.ToListAsync();
+            return View(users);
+        }
+
+        [Authorize(Roles = "Admin")]
+        [HttpPost]
+        public async Task<IActionResult> Delete(string id)
+        {
+            UserModel user = await userManager.FindByIdAsync(id);
+            if (user != null)
+            {
+                IdentityResult result = await userManager.DeleteAsync(user);
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("Users","Account");
+                }
+                else
+                {
+                    AddErrorsFromResult(result);
+                }
+            }
+            else
+            {
+                ModelState.AddModelError("", "User Not Found");
+            }
+            return View("Index", userManager.Users);
+        }
+
+        [AllowAnonymous]
+        private void AddErrorsFromResult(IdentityResult result)
+        {
+            foreach (IdentityError error in result.Errors)
+            {
+                ModelState.AddModelError("", error.Description);
+            }
         }
     }
 }

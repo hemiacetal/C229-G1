@@ -32,14 +32,15 @@
                 if (User.IsInRole("Admin"))
                 {
                     <li><a asp-action="AddClubPage" asp-controller="Home">Add Club </a></li>
-                  
+
                 }
                 <li><a asp-action="ManagePlayersPage" asp-controller="Home"> Manage Players </a></li>
 
                 if (User.IsInRole("Admin"))
                 {
-                    
-                    <li><a asp-action="###" asp-controller="###">Registered Users</a></li>
+
+                    <li><a asp-action="Users" asp-controller="Account">View Registered Users</a></li>
+                    <li><a asp-action="LogPage" asp-controller="Home">View Logs</a></li>
                 }
 
                 <li><a asp-action="Logout" asp-controller="Account"> Log Out </a></li>

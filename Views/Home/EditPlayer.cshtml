@@ -4,15 +4,15 @@
 
 }
 <form class="form defaultForm" asp-action="EditPlayer" method="post">
-    <input type="hidden" asp-for="PlayerID" />
     <div asp-validation-summary="All"></div>
     <div class="form-group">
         <label asp-for="PlayerName">Name:</label>
+        <div><span asp-validation-for="PlayerName" class="validation-summary-errors" /></div>
         <input asp-for="PlayerName" class="form-control" readonly />
     </div>
     <div class="form-group">
         <label asp-for="Age">Age:</label>
-        @*<div><span asp-validation-for="PlayerName" class="validation-summary-errors"></span></div>*@
+        <div><span asp-validation-for="Age" class="validation-summary-errors"/></div>
         <input asp-for="Age" class="form-control" />
     </div>
 

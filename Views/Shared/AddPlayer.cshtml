@@ -1,14 +1,13 @@
 ﻿@model Player
 
-<div asp-validation-summary="All"></div>
 <div>
     <label asp-for="PlayerName">Name:</label>
-    @*<div><span asp-validation-for="PlayerName" class="validation-summary-errors"></span></div>*@
+    <div><span asp-validation-for="PlayerName" class="validation-summary-errors"></span></div>
     <input asp-for="PlayerName" />
 </div>
 <div>
     <label asp-for="Age">Age:</label>
-    @*<div><span asp-validation-for="Age" class="validation-summary-errors"></span></div>*@
+    <div><span asp-validation-for="Age" class="validation-summary-errors"></span></div>
     <input asp-for="Age" />
 </div>
 <div>
@@ -27,6 +26,7 @@
 
 <div>
     <label asp-for="ClubID">Club: </label><br />
+    <div><span asp-validation-for="ClubID" class="validation-summary-errors"></span></div>
     <select asp-for="ClubID">
         @foreach (Club club in ViewBag.ClubList)
         {

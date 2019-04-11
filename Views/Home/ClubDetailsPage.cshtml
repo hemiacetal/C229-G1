@@ -24,20 +24,20 @@
         <td>
             @if (@Model.Country != null && !@Model.Country.Equals(""))
             {<p>@Model.Country</p>}
-        else
-        {<p>[Not Specified]</p>}
+            else
+            {<p>[Not Specified]</p>}
         </td>
         <td>
             @if (@Model.HeadCoachName != null && !@Model.HeadCoachName.Equals(""))
             {<p>@Model.HeadCoachName</p>}
-        else
-        {<p>[Not Specified]</p>}
+            else
+            {<p>[Not Specified]</p>}
         </td>
         <td>
             @if (@Model.Ground != null && !@Model.Ground.Equals(""))
             {<p>@Model.Ground</p>}
-        else
-        {<p>[Not Specified]</p>}
+            else
+            {<p>[Not Specified]</p>}
         </td>
 
     </tr>
@@ -51,8 +51,6 @@
     <h2>  Players </h2>
 
     <table align="center">
-
-
 
         <thead>
             <tr>
@@ -68,7 +66,6 @@
 
             </tr>
         </thead>
-
 
         @foreach (Player player in Model.Players)
         {

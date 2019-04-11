@@ -5,9 +5,9 @@
 }
 <form class="form defaultForm" asp-action="EditClub" method="post">
     <input type="hidden" asp-for="ClubID" />
-    <div asp-validation-summary="All"></div>
     <div class="form-group">
         <label asp-for="ClubFullName">Club Name:</label>
+        <div><span asp-validation-for="ClubFullName" class="validation-summary-errors"/></div>
         <input asp-for="ClubFullName" class="form-control" readonly />
     </div>
     <div class="form-group">

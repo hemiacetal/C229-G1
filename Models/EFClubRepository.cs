@@ -36,7 +36,6 @@ namespace C229_G1.Models
                     dbEntry.HeadCoachName = club.HeadCoachName;
                     dbEntry.Ground = club.Ground;
                     //dbEntry.Players = club.Players;
-
                 }
             }
             context.SaveChanges();

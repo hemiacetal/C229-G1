@@ -21,8 +21,8 @@ namespace C229_G1.Models
 
         public static async void EnsurePopulated(IApplicationBuilder app)
         {
-            UserManager<IdentityUser> userManager =
-                app.ApplicationServices.GetRequiredService<UserManager<IdentityUser>>();
+            UserManager<UserModel> userManager =
+                app.ApplicationServices.GetRequiredService<UserManager<UserModel>>();
 
             RoleManager<IdentityRole> roleManager =
                 app.ApplicationServices.GetRequiredService<RoleManager<IdentityRole>>();
@@ -35,14 +35,14 @@ namespace C229_G1.Models
                     await roleManager.CreateAsync(new IdentityRole(generalRole));
                 }
 
-                IdentityUser user = new IdentityUser("Admin");
+                UserModel user = new UserModel("Admin");
                 IdentityResult result = await userManager.CreateAsync(user, adminPassword);
                 if (result.Succeeded)
                 {
                     await userManager.AddToRoleAsync(user, adminRole);
                 }
 
-                user = new IdentityUser("General");
+                user = new UserModel("General");
                 result = await userManager.CreateAsync(user, generalPassword);
                 if (result.Succeeded)
                 {

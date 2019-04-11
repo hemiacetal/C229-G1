@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace C229_G1.Migrations
@@ -21,6 +22,21 @@ namespace C229_G1.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Clubs", x => x.ClubID);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Logs",
+                columns: table => new
+                {
+                    logID = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    user = table.Column<string>(nullable: true),
+                    datetime = table.Column<DateTime>(nullable: false),
+                    action = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Logs", x => x.logID);
                 });
 
             migrationBuilder.CreateTable(
@@ -54,6 +70,9 @@ namespace C229_G1.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "Logs");
+
             migrationBuilder.DropTable(
                 name: "Players");
 

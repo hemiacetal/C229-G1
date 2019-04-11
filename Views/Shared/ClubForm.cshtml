@@ -1,10 +1,9 @@
 ﻿@model Club
 
 
-<div asp-validation-summary="All"></div>
 <div>
     <label asp-for="ClubFullName">Club Name:</label>
-    @*<div><span asp-validation-for="ClubFullName" class="validation-summary-errors"></span></div>*@
+    <div><span asp-validation-for="ClubFullName" class="validation-summary-errors"></span></div>
     <input asp-for="ClubFullName" />
 </div>
 <div>

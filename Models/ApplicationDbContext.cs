@@ -16,6 +16,7 @@ namespace C229_G1.Models
 
         public DbSet<Club> Clubs { get; set; }
         public DbSet<Player> Players { get; set; }
-        
+        public DbSet<Log> Logs { get; set; }
+
     }
 }
