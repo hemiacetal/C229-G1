@@ -46,7 +46,7 @@ namespace C229_G1.Controllers
             if (ModelState.IsValid)
             {
                 UserModel user =
-                await userManager.FindByNameAsync(loginModel.Name);
+                await userManager.FindByNameAsync(loginModel.UserName);
                 if (user != null)
                 {
                     await signInManager.SignOutAsync();
@@ -57,12 +57,12 @@ namespace C229_G1.Controllers
                     }
                     else
                     {
-                        ModelState.AddModelError("Name", "Username/Password Combination not in Database.");
+                        ModelState.AddModelError("UserName", "Username/Password Combination not in Database.");
                     }
                 }
                 else
                 {
-                    ModelState.AddModelError("Name", "Username/Password Combination not in Database.");
+                    ModelState.AddModelError("UserName", "Username/Password Combination not in Database.");
                 }
             }
             return View(loginModel);
@@ -96,7 +96,7 @@ namespace C229_G1.Controllers
             }
             
             if (ModelState.IsValid)
-                ModelState.AddModelError("UserName", "Username Already In Use.");
+                ModelState.AddModelError("", "Username Already In Use.");
 
             return View(model);
         }

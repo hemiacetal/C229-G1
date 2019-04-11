@@ -8,8 +8,8 @@ namespace C229_G1.Models
 {
     public class LoginModel
     {
-        [Required]
-        public string Name { get; set; }
+        [Required(ErrorMessage = "The Username field is required.")]
+        public string UserName { get; set; }
         [Required]
         [UIHint("password")]
         public string Password { get; set; }
