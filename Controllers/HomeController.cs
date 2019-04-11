@@ -57,7 +57,6 @@ namespace C229_G1.Controllers
         [Authorize(Roles = "Admin")]
         public ViewResult AddClubPage(Club club)
         {
-
             if (ModelState.IsValid)
             {
 
@@ -86,7 +85,7 @@ namespace C229_G1.Controllers
         [Authorize]
         public ViewResult ManagePlayersPage(Player player)
         {
-            Club club = repositoryClub.Clubs.First(c => c.ClubID == player.ClubID);
+            Club club = repositoryClub.Clubs.FirstOrDefault(c => c.ClubID == player.ClubID);
             if (club == null)
             {
                 ModelState.AddModelError("ClubID", $"The selected club does not exist in the system.");
