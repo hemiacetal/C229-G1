@@ -28,11 +28,19 @@ namespace C229_G1.Controllers
             return View(repositoryClub.Clubs);
         }
 
-
-        public ViewResult ClubDetailsPage(int clubID)
+        public IActionResult ClubDetailsPage(int clubID)
         {
             Club club = repositoryClub.Clubs.FirstOrDefault(c => c.ClubID == clubID);
-            return View(club);
+            if (club == null)
+            {
+                TempData["message"] = "Club not found.";
+                return RedirectToAction("ClubPage");
+            }
+            else
+            {
+                return View(club);
+            }
+
         }
 
 
@@ -52,6 +60,7 @@ namespace C229_G1.Controllers
             {
 
                 repositoryClub.Save(club);
+                TempData["message"] = $"Club {club.ClubFullName} has been successfully added";
                 return View("ClubPage", repositoryClub.Clubs);
             }
             else
@@ -64,68 +73,71 @@ namespace C229_G1.Controllers
         public ViewResult ManagePlayersPage()
         {
 
-            ViewBag.ClubList = repositoryClub.Clubs; 
+            ViewBag.ClubList = repositoryClub.Clubs;
             return View();
 
         }
 
-        
+
         [HttpPost]
         [Authorize]
         public ViewResult ManagePlayersPage(Player player)
         {
-            try
+            Club club = repositoryClub.Clubs.First(c => c.ClubID == player.ClubID);
+            if (club == null)
             {
-                repositoryClub.Clubs.First(c => c.ClubID == player.ClubID).Equals(0);
-            }
-            catch
-            {
-                
-                ModelState.AddModelError(string.Empty, $"*Selected club does not exist in the system."); 
-            }
-            if (ModelState.IsValid)
-            {
-                repositoryPlayer.Save(player);
-                return View("ClubPage", repositoryClub.Clubs);
+                ModelState.AddModelError("ClubID", $"The selected club does not exist in the system.");
             }
             else
             {
-                ViewBag.ClubList = repositoryClub.Clubs;
-                return View(player);
+                if (ModelState.IsValid)
+                {
+                    repositoryPlayer.Save(player);
+                    return View("ClubPage", repositoryClub.Clubs);
+                }
             }
 
+            ViewBag.ClubList = repositoryClub.Clubs;
+            return View(player);
         }
 
         [Authorize(Roles = "Admin")]
-        public ViewResult EditClub(int clubID) => View(repositoryClub.Clubs.FirstOrDefault
-            (c => c.ClubID == clubID));
+        public IActionResult EditClub(int clubID)
+        {
+
+            Club club = repositoryClub.Clubs.FirstOrDefault(c => c.ClubID == clubID);
+            if (club == null)
+            {
+                TempData["message"] = "Club not found.";
+                return RedirectToAction("ClubPage", repositoryClub.Clubs);
+            }
+            else
+            {
+                return View("EditClub", club);
+            }
+
+        }
 
 
         [HttpPost]
         [Authorize(Roles = "Admin")]
         public IActionResult EditClub(Club club)
         {
-            try
+            Club editClub = repositoryClub.Clubs.FirstOrDefault(c => c.ClubID == club.ClubID);
+            if (editClub == null)
             {
-                repositoryClub.Clubs.FirstOrDefault(c => c.ClubID == club.ClubID).Equals(null);
-            }
-            catch
-            {
-
-                ModelState.AddModelError(string.Empty, $"*Club {club.ClubFullName} was removed from the system and cannot be edited.");
-            }
-
-            if (ModelState.IsValid)
-            {
-                repositoryClub.Save(club);
-                TempData["message"] = $"Club {club.ClubFullName} has been successfully modified";
-                return RedirectToAction("ClubPage", repositoryClub.Clubs);
+                ModelState.AddModelError("ClubFullName", $"Club {club.ClubFullName} was removed from the system and cannot be edited.");
             }
             else
             {
-               
-                return View(club);
+                if (ModelState.IsValid)
+                {
+                    repositoryClub.Save(club);
+                    TempData["message"] = $"Club {club.ClubFullName} has been successfully modified";
+                    return RedirectToAction("ClubPage", repositoryClub.Clubs);
+                }
             }
+            return View(club);
         }
 
         [HttpPost]
@@ -133,12 +145,17 @@ namespace C229_G1.Controllers
         public IActionResult DeleteClub(int clubID)
         {
             Club deletedClub = repositoryClub.DeleteClub(clubID);
-            if (deletedClub != null)
+            if (deletedClub == null)
+            {
+                TempData["message"] = "Club not found.";
+            }
+            else
             {
                 TempData["message"] = $"Club {deletedClub.ClubFullName} was successfully removed from the system";
             }
             return RedirectToAction("ClubPage", repositoryClub.Clubs);
         }
+
     }
 }
 
