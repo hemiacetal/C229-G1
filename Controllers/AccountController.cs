@@ -129,14 +129,9 @@ namespace C229_G1.Controllers
                     TempData["message"] = "User has been deleted.";
                     return RedirectToAction("Users","Account");
                 }
-                else
-                {
-                    AddErrorsFromResult(result);
-                }
             }
             else
             {
-                ModelState.AddModelError("", "User Not Found");
                 TempData["message"] = "User not found.";
             }
 
