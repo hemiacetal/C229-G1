@@ -126,6 +126,7 @@ namespace C229_G1.Controllers
                 IdentityResult result = await userManager.DeleteAsync(user);
                 if (result.Succeeded)
                 {
+                    TempData["message"] = "User has been deleted.";
                     return RedirectToAction("Users","Account");
                 }
                 else
@@ -138,7 +139,8 @@ namespace C229_G1.Controllers
                 ModelState.AddModelError("", "User Not Found");
                 TempData["message"] = "User not found.";
             }
-            return View("Index", userManager.Users);
+
+            return View("Users", userManager.Users);
         }
 
         [AllowAnonymous]
