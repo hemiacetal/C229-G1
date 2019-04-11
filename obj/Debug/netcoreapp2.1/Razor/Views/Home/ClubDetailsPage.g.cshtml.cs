@@ -349,12 +349,12 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("                    <td>\r\n                        ");
             EndContext();
             BeginContext(2165, 418, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0433b4dfab3943cfa7643e2bc39c78af", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d1ba5648952d4932bcce832c74d41146", async() => {
                 BeginContext(2228, 32, true);
                 WriteLiteral("\r\n\r\n                            ");
                 EndContext();
                 BeginContext(2260, 101, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5f44112818ac4fa6b1098b933c214c36", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a72f7026ce94913be4c9905ffa05438", async() => {
                     BeginContext(2353, 4, true);
                     WriteLiteral("Edit");
                     EndContext();
@@ -455,7 +455,7 @@ WriteAttributeValue("", 2435, player.PlayerID, 2435, 16, false);
             WriteLiteral("    <div class=\"text-center\">\r\n        <button class=\"button greenButton\">");
             EndContext();
             BeginContext(2796, 49, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "859d248ef53a4d0f9f91addf71271697", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ffaadab72c9b4ae4b7a95d30dd4e7c54", async() => {
                 BeginContext(2830, 11, true);
                 WriteLiteral("Add Players");
                 EndContext();

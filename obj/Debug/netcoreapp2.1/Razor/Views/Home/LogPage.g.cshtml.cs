@@ -59,7 +59,7 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("<h2> Action Logs </h2>\r\n\r\n");
             EndContext();
             BeginContext(90, 805, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "343e91910e3a465fad2ad752878b47b3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cd0b7184e73245b7b9efdc3d1214e5ad", async() => {
                 BeginContext(96, 231, true);
                 WriteLiteral("\r\n    <table align=\"center\">\r\n        <thead>\r\n            <tr>\r\n                <th>Date/Time</th>\r\n                <th>User</th>\r\n                <th>Action Performed</th>\r\n\r\n            </tr>\r\n        </thead>\r\n        <tbody>\r\n");
                 EndContext();

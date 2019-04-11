@@ -53,7 +53,7 @@ namespace C229_G1.Controllers
             {
 
                 repositoryClub.Save(club);
-                repositoryLog.Save(MakeLog($"Created Club \"{club.ClubFullName}\""));
+                repositoryLog.Save(MakeLog($"Created Club \"{club.ClubFullName}\" of ClubID \"" + club.ClubID + "\""));
                 return View("ClubPage", repositoryClub.Clubs);
             }
             else
@@ -121,7 +121,7 @@ namespace C229_G1.Controllers
             if (ModelState.IsValid)
             {
                 repositoryClub.Save(club);
-                repositoryLog.Save(MakeLog($"Modified Club \"{club.ClubFullName}\""));
+                repositoryLog.Save(MakeLog($"Modified Club \"{club.ClubFullName}\" of ClubID \"" + club.ClubID + "\""));
                 TempData["message"] = $"Club {club.ClubFullName} has been successfully modified";
                 return RedirectToAction("ClubPage", repositoryClub.Clubs);
             }
@@ -140,6 +140,7 @@ namespace C229_G1.Controllers
             if (deletedClub != null)
             {
                 repositoryLog.Save(MakeLog($"Deleted Club \"{deletedClub.ClubFullName}\""));
+                repositoryLog.Save(MakeLog($"Deleted Club \"{deletedClub.ClubFullName}\" of ClubID \"" + deletedClub.ClubID + "\""));
                 TempData["message"] = $"Club {deletedClub.ClubFullName} was successfully removed from the system";
             }
             return RedirectToAction("ClubPage", repositoryClub.Clubs);
