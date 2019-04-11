@@ -31,7 +31,6 @@ namespace C229_G1.Models
                     dbEntry.Age = player?.Age ?? 0;
                     dbEntry.CountryOfBirth = player.CountryOfBirth;
                     dbEntry.PlayingPosition = player.PlayingPosition;
-                    //dbEntry.ClubFullName = player.ClubFullName; ???
                 }
             }
             context.SaveChanges();

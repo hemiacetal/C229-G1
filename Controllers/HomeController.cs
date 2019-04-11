@@ -158,14 +158,13 @@ namespace C229_G1.Controllers
         {
             try
             {
-              
                 repositoryPlayer.Players.FirstOrDefault(p => p.ClubID == player.ClubID).Equals(null);
-               
             }
             catch
             {
                 ModelState.AddModelError("PlayerName", $"Player {player.PlayerName} was removed from the system and cannot be edited.");
             }
+
             if (ModelState.IsValid)
             {
                 repositoryPlayer.Save(player);
