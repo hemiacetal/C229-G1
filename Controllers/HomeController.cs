@@ -40,9 +40,7 @@ namespace C229_G1.Controllers
             {
                 return View(club);
             }
-
         }
-
 
         [HttpGet]
         [Authorize(Roles = "Admin")]
@@ -60,7 +58,7 @@ namespace C229_G1.Controllers
             {
 
                 repositoryClub.Save(club);
-                TempData["message"] = $"Club {club.ClubFullName} has been successfully added";
+                TempData["message"] = $"Club {club.ClubFullName} has been successfully added.";
                 return View("ClubPage", repositoryClub.Clubs);
             }
             else
@@ -83,7 +81,7 @@ namespace C229_G1.Controllers
         [Authorize]
         public ViewResult ManagePlayersPage(Player player)
         {
-            Club club = repositoryClub.Clubs.First(c => c.ClubID == player.ClubID);
+            Club club = repositoryClub.Clubs.FirstOrDefault(c => c.ClubID == player.ClubID);
             if (club == null)
             {
                 ModelState.AddModelError("ClubID", $"The selected club does not exist in the system.");
@@ -93,6 +91,7 @@ namespace C229_G1.Controllers
                 if (ModelState.IsValid)
                 {
                     repositoryPlayer.Save(player);
+                    TempData["message"] = $"Player {player.PlayerName} was successfully removed from Club {club.ClubFullName}.";
                     return View("ClubPage", repositoryClub.Clubs);
                 }
             }
@@ -133,7 +132,7 @@ namespace C229_G1.Controllers
                 if (ModelState.IsValid)
                 {
                     repositoryClub.Save(club);
-                    TempData["message"] = $"Club {club.ClubFullName} has been successfully modified";
+                    TempData["message"] = $"Club {club.ClubFullName} has been successfully modified.";
                     return RedirectToAction("ClubPage", repositoryClub.Clubs);
                 }
             }
@@ -151,7 +150,7 @@ namespace C229_G1.Controllers
             }
             else
             {
-                TempData["message"] = $"Club {deletedClub.ClubFullName} was successfully removed from the system";
+                TempData["message"] = $"Club {deletedClub.ClubFullName} was successfully removed from the system.";
             }
             return RedirectToAction("ClubPage", repositoryClub.Clubs);
         }
