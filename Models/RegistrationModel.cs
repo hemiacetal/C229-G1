@@ -11,7 +11,11 @@ namespace C229_G1.Models
     {
         
         [Required(ErrorMessage = "The Username field is required.")]
-        public override string UserName { get; set; }
+        public override string UserName { get => base.UserName; set => base.UserName = value; }
+
+        [RegularExpression(".+\\@.+\\..+",
+            ErrorMessage = "Please enter a valid email address.")]
+        public override string Email { get => base.Email; set => base.Email = value; }
 
         public string FirstName { get; set; }
 
