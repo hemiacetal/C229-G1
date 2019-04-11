@@ -5,26 +5,35 @@
 <h2>Clubs</h2>
 
 <body>
-    <ul>
+    @if (Model.Any())
+    {
+        <ul>
 
-        @foreach (Club club in Model)
-        {
+            @foreach (Club club in Model)
+            {
 
-        <li>
-            <a asp-action="ClubDetailsPage" asp-route-clubID="@club.ClubID">@club.ClubFullName</a>
+                <li>
+                    <a asp-action="ClubDetailsPage" asp-route-clubID="@club.ClubID">@club.ClubFullName</a>
 
-            @if (User.IsInRole("Admin")) { 
-                <form class=" form defaultForm" asp-action="DeleteClub" method="post">
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <form class=" form defaultForm" asp-action="DeleteClub" method="post">
 
-                    <a class="button orangeButton" asp-action="EditClub" asp-route-clubID="@club.ClubID">Edit</a>
-                    <input type="hidden" name="ClubID" value="@club.ClubID" />
-                    <button type="submit" class="button redButton"> Delete  </button>
-                </form>
+                            <a class="button orangeButton" asp-action="EditClub" asp-route-clubID="@club.ClubID">Edit</a>
+                            <input type="hidden" name="ClubID" value="@club.ClubID" />
+                            <button type="submit" class="button redButton"> Delete  </button>
+                        </form>
+                    }
+
+                </li>
+
             }
+        </ul>
+    }
+    else
+    {
+        <p>There are currently no clubs in the system.</p>
+    }
 
-        </li>
-
-        }
-    </ul>
 </body>
 
