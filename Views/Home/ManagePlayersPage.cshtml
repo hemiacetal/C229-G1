@@ -1,11 +1,14 @@
 ﻿@model Player
 @{
-    ViewBag.Title = "ManagePlayersPage";
+    ViewBag.Title = "Add a Player - Soccer Manager";
+    IEnumerable<Club> clubs = ViewBag.ClubList;
 }
 <!DOCTYPE html>
 <html>
 <body>
     <h2> Add Player </h2>
+    @if (clubs.Any())
+    {
         <form class="form defaultForm" asp-action="ManagePlayersPage" method="post">
             @await Html.PartialAsync("AddPlayer")
             <div>
@@ -17,6 +20,11 @@
                 </button>
             </div>
         </form>
+    }
+    else
+    {
+        <p>There are currently no clubs in the system, so you cannot add a player.</p>
+    }
+
 </body>
 </html>
-
