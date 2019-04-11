@@ -90,7 +90,7 @@
                 {
                     <td>
                         <form id="playersForm" asp-action="DeletePlayer" method="post">
-
+                            <input type="hidden" asp-for="@player.PlayerID" />
                             <a class="button orangeButton" asp-action="EditPlayer" asp-route-playerID="@player.PlayerID">Edit</a>
                             <input type="hidden" name="PlayerID" value="@player.PlayerID" />
                             <button type="submit" class="button redButton"> Delete  </button>

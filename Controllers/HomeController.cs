@@ -61,7 +61,7 @@ namespace C229_G1.Controllers
             {
 
                 repositoryClub.Save(club);
-                repositoryLog.Save(MakeLog($"Created Club \"{club.ClubFullName}\" with ClubID \"" + club.ClubID + "\""));
+                repositoryLog.Save(MakeLog($"Created Club \"{club.ClubFullName}\" with ClubID {club.ClubID}"));
                 TempData["message"] = $"Club {club.ClubFullName} has been successfully added";
                 return View("ClubPage", repositoryClub.Clubs);
             }
@@ -88,14 +88,14 @@ namespace C229_G1.Controllers
             Club club = repositoryClub.Clubs.FirstOrDefault(c => c.ClubID == player.ClubID);
             if (club == null)
             {
-                ModelState.AddModelError("ClubID", $"The selected club does not exist in the system.");
+                ModelState.AddModelError("PlayerName", $"The selected Club does not exist.");
             }
             else
             {
                 if (ModelState.IsValid)
                 {
                     repositoryPlayer.Save(player);
-                    repositoryLog.Save(MakeLog($"Added Player \"{player.PlayerName}\" to ClubID \"{player.ClubID}\""));
+                    repositoryLog.Save(MakeLog($"Added Player \"{player.PlayerName}\" to Club \"{club.ClubFullName}\" with ClubID {player.ClubID}"));
                     return View("ClubPage", repositoryClub.Clubs);
                 }
             }
@@ -128,14 +128,14 @@ namespace C229_G1.Controllers
             Club editClub = repositoryClub.Clubs.FirstOrDefault(c => c.ClubID == club.ClubID);
             if (editClub == null)
             {
-                ModelState.AddModelError("ClubFullName", $"Club {club.ClubFullName} was removed from the system and cannot be edited.");
+                ModelState.AddModelError("ClubFullName", $"Club \"{club.ClubFullName}\" was removed from the system and cannot be edited.");
             }
             else
             {
                 if (ModelState.IsValid)
                 {
                     repositoryClub.Save(club);
-                    repositoryLog.Save(MakeLog($"Modified Club \"{club.ClubFullName}\" with ClubID \"" + club.ClubID + "\""));
+                    repositoryLog.Save(MakeLog($"Modified Club \"{club.ClubFullName}\" with ClubID {club.ClubID}"));
                     TempData["message"] = $"Club {club.ClubFullName} has been successfully modified";
                     return RedirectToAction("ClubPage", repositoryClub.Clubs);
                 }
@@ -154,7 +154,7 @@ namespace C229_G1.Controllers
             }
             else
             {
-                repositoryLog.Save(MakeLog($"Deleted Club \"{deletedClub.ClubFullName}\" with ClubID \"" + deletedClub.ClubID + "\""));
+                repositoryLog.Save(MakeLog($"Deleted Club \"{deletedClub.ClubFullName}\" with ClubID {deletedClub.ClubID}"));
                 TempData["message"] = $"Club {deletedClub.ClubFullName} was successfully removed from the system";
             }
             return RedirectToAction("ClubPage", repositoryClub.Clubs);
@@ -182,27 +182,25 @@ namespace C229_G1.Controllers
         [Authorize]
         public IActionResult EditPlayer(Player player)
         {
-            try
+            Club club = repositoryClub.Clubs.FirstOrDefault(c => c.ClubID == player.ClubID);
+            Player editPlayer = repositoryPlayer.Players.FirstOrDefault(p => p.PlayerID == player.PlayerID);
+            if (club == null)
             {
-                repositoryPlayer.Players.FirstOrDefault(p => p.ClubID == player.ClubID).Equals(null);
+                ModelState.AddModelError("PlayerName", $"The player's club does not exist and so the player cannot be modified.");
             }
-            catch
+            else if (editPlayer == null)
             {
-                ModelState.AddModelError("PlayerName", $"Player {player.PlayerName} was removed from the system and cannot be edited.");
+                ModelState.AddModelError("PlayerName", $"The player does not exist and so the player cannot be modified");
             }
-
-            if (ModelState.IsValid)
+            else if (ModelState.IsValid)
             {
                 repositoryPlayer.Save(player);
-                repositoryLog.Save(MakeLog($"Modified Player \"{player.PlayerName}\" of ClubID \"{player.ClubID}\""));
+                repositoryLog.Save(MakeLog($"Modified Player \"{player.PlayerName}\" of Club \"{club.ClubFullName}\" with ClubID {player.ClubID}"));
                 TempData["message"] = $"Player {player.PlayerName} has been successfully modified";
                 return RedirectToAction("ClubPage", repositoryClub.Clubs);
-               
             }
-            else
-            {
-                return View(player);
-            }
+
+            return View(player);
         }
 
         [HttpPost]
@@ -216,7 +214,8 @@ namespace C229_G1.Controllers
             }
             else
             {
-                repositoryLog.Save(MakeLog($"Deleted Player \"{deletedPlayer.PlayerName}\" from ClubID \"{deletedPlayer.ClubID}\""));
+                Club club = repositoryClub.Clubs.FirstOrDefault(p => p.ClubID == deletedPlayer.ClubID);
+                repositoryLog.Save(MakeLog($"Deleted Player \"{deletedPlayer.PlayerName}\" from Club \"{club.ClubFullName}\" with ClubID {deletedPlayer.ClubID}"));
                 TempData["message"] = $"Player {deletedPlayer.PlayerName} was successfully removed from the system";
             }
             return RedirectToAction("ClubPage", repositoryClub.Clubs);
