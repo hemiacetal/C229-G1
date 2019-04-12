@@ -110,3 +110,4 @@ C:\Users\yusei\Documents\College\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1
 C:\Users\yusei\Documents\College\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.dll
 C:\Users\yusei\Documents\College\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.pdb
 C:\Users\yusei\Documents\College\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\C229_G1.csproj.CopyComplete
+x:\Users\hemi\Documents\college\2\COMP229\C229-G1\C229-G1\obj\Debug\netcoreapp2.1\Razor\Views\Account\AccessDenied.g.cshtml.cs

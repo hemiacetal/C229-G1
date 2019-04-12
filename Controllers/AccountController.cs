@@ -146,5 +146,11 @@ namespace C229_G1.Controllers
                 ModelState.AddModelError("", error.Description);
             }
         }
+
+        [AllowAnonymous]
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
     }
 }
