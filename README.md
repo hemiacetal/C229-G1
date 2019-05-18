@@ -1,7 +1,7 @@
 # C229-G1
 Final Project for Web Development Course, Group 1
 
-The original project was to create a "Soccer Team Management" web application, and implement whatever features we deemed to be useful into it, using only methods that we learned throughout the course.
+The original project was to create a "Soccer Team Management" web application using ASP.NET MVC Core, and implement whatever features we deemed to be useful into it, using only methods that we learned throughout the course.
 
 Standard features that needed to be implemented were:
 - Adding/Editing a Club
